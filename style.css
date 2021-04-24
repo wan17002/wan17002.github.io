@@ -1,6 +1,11 @@
 #content{
     margin: 0 auto;
     width: 1000px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#content h1{
+    
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 #indexHeader{
     display:flex;
@@ -15,20 +20,19 @@
     color: white;
     margin-left: auto;
     font-size: 3em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 #indexSelfie{
     box-shadow: 0 0 4px 2px gray;
-    height: 250px;
+    height: 15em;
+    width: 10em;
     margin:0 auto;
+    max-height: 15em;
+    max-width: 10em;
 }
 
 
-#indexSelfie{
-    width:10em;
-    margin: 0 auto;
-}
 main{
     margin: 0 auto;
 }

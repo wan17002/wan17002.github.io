@@ -6,7 +6,7 @@
     display:flex;
     text-align: center;
     margin: 0 auto;
-    background-color: #4da6ff;
+    background-color:brown;
     height: 8em;
     vertical-align: top;
     border-radius: 10px 10px 10px 10px;
@@ -37,13 +37,16 @@ main h1{
 }
 
 #indexFooter{
-    background-color: #4da6ff;
+    background-color: brown;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
     margin: 0;
+    color: white;
 }
-h3{
+#indexFooter h4{
     margin-bottom: 0;
+}
+#indexFooter a{
     color: white;
 }
 

@@ -1,0 +1,56 @@
+body{
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    padding: 40px 30px;
+    width: 25%;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#POPULAR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mostPOPULAR{
+    background-color: lightblue;
+}
+
+p{
+    color:gray;
+}
+
+
+.price{
+    display: flex;
+}
+
+.number{
+    font-size: 40px;
+    color:#25b0eb;
+    font-weight: bold;
+}
+
+h2, span, .blueText{
+    color: #25b0eb;
+}
+
+button{
+    padding: 10px;
+    background-color: lightgray;
+    color: white;
+    border: none;
+    box-shadow:lightgray;
+}
+
+.button-yellow{
+    background-color:#FFCF2D;
+}
+

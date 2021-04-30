@@ -6,7 +6,6 @@ Requires that the screen is a minimum of 32.5em before we start applying any of 
         min-width: 100%;
     }
     body{
-        background-color: blue;
         grid-template-columns: 1fr;
     }
     main{

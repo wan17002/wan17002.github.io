@@ -1,5 +1,4 @@
 body{
-    background-color: yellow;
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr;

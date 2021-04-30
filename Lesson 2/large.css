@@ -1,7 +1,6 @@
 /* Only uses these CSS properties if the screen has a minimum width of 63.5*/
 @media only screen and (min-width: 63.5em){
     body{
-        background-color: green;
     }
     main{
         grid-template-columns: 1fr 1fr 1fr;

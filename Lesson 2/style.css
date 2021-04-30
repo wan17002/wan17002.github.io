@@ -1,10 +1,14 @@
 body{
     background-color: yellow;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 header{
     text-align: center;
     background-color: #0A1F32;
     color: white;
+    margin: 1rem auto;
 }
 header h1{
     padding-top:1em;
@@ -16,6 +20,7 @@ header h2{
 
 h1{
     font-size: 2em;
+    background-color:#0A1F32;
 }
 
 h2{
@@ -30,15 +35,14 @@ h1, h2, h3{
 p{
     font-family: 'Cormorant Garamond', serif;
     margin: .5em;
+    font-size: 20px;
 }
 
-
-main{
+/*main{
     /* We did this so everything will stack because this is the smallest size */
     /* We want everything to stack because this is the mobile version */
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    
+
 section{
     width: 95%;
     margin: 0 auto;

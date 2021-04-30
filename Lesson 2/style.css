@@ -1,0 +1,92 @@
+body{
+    background-color: yellow;
+}
+header{
+    text-align: center;
+    background-color: #0A1F32;
+    color: white;
+}
+header h1{
+    padding-top:1em;
+    min-width: 100%;
+}
+header h2{
+    padding-bottom: 1em;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 100%;
+}
+h3{
+    font-size: .9em;
+}
+h1, h2, h3{
+    font-family: 'Libre Baskerville', serif;
+}
+p{
+    font-family: 'Cormorant Garamond', serif;
+    margin: .5em;
+}
+
+
+main{
+    /* We did this so everything will stack because this is the smallest size */
+    /* We want everything to stack because this is the mobile version */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+section{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    background-color: #EFEFEF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.content{
+    padding: .5em;
+    
+}
+.CompanyName{
+    background-color: #374A57;
+    margin: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+h3{
+    margin: 0;
+}
+.CompanyName h2{
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+img{
+    width: 100%;
+    display:block;
+    margin: .5rem auto;
+}
+
+footer{
+    background-color: #0A1F32;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    width: 100%;
+}
+footer h4{
+    margin-bottom: 0;
+}
+footer a{
+    color: white;
+}
+
+#dateModified{
+    color: yellow;
+    margin: 0;
+}
+

@@ -1,0 +1,22 @@
+/*
+Requires that the screen is a minimum of 32.5em before we start applying any of these rules 
+*/
+@media only screen and (min-width: 32.5em){
+    header{
+        min-width: 100%;
+    }
+    body{
+        background-color: blue;
+    }
+    main{
+        /* 
+        We don't need to retype the "display: grid" because we already typed it in the original file
+        Adding "grid-template-columns: 1fr 1fr;" will overwrite what we've typed previously
+        */
+        grid-template-columns: 1fr 1fr;
+    }
+    section{
+        min-width: 95%;
+    }
+    
+}

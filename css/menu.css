@@ -1,0 +1,81 @@
+/* Small/Phone View ***************/
+body{
+    background-color: white;
+}
+nav{
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: #12aaeb;
+}
+#navigation{
+    /* takes bullet points off */
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+/* takes the first-child that's an li of the navigation and display block
+says "turn it on as a normal blocke element
+ */
+#navigation li:first-child{
+    display: block;
+}
+/* This one tells every other element in the list to turn off. 
+Don't display them*/
+#navigation li{
+    display: none;
+}
+#navigation a{
+/* this allows the whole area to be clickable */
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    /*takes off the underline*/
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover{
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+    /* border-bottom:5px solid black; */
+}
+
+/*need the responsive. Then nav won't click out if there's no responsive */
+#navigation.responsive li{
+    display:block;
+}
+/* We're using a media query. If the screen is at least 34.5em, then we execute*/
+@media only screen and (min-width: 34.5em){
+    nav{
+        max-width: 100%;
+    }
+    /*We have seven items, so we're going to make 7 columns*/
+    /*He typically uses fr, but we're using auto this time. It depends on what text is inside*/
+    #navigation{
+        grid-template-columns:repeat(7, auto);
+    }
+    #navigation li{
+        display: block; /*change state in small view */
+    }
+    /*Hides the hamburger menu. The 3 lines at the button*/
+    #navigation li:first-child{
+        display: none;
+    }
+    #navigation a{
+        text-align: center;
+    }
+}
+/*Brother Hayes switches the min-width depending on his design*/
+@media only screen and (min-width: 54.5em){
+    /*Notice how we're changing #navigation rather than the nav bar itself, so */
+    #navigation{
+        width: 800px;
+        /*16px top and bottom, and autos the margin left and right*/
+        margin: 16px auto;
+    }
+}

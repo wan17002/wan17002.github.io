@@ -1,19 +1,26 @@
+
 /* Small/Phone View ***************/
 body{
     background-color: #083D77;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
+    min-width: 164px;
 }
 main{
     background-color: white;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 1em;
+}
+section{
+    padding: .5em;
 }
 h1{
     background-color: white;
     margin: 0;
     padding: 0;
+
 }
 nav{
     width: 100%;
@@ -52,7 +59,6 @@ Don't display them*/
 h1{
     text-align: center;
     text-decoration: underline;
-    margin-bottom: 5px;
     font-family: "DM Serif Display", serif;
 }
 h2{
@@ -60,12 +66,14 @@ h2{
     text-decoration: underline;
 }
 h2, h3, h4{
+    font-family: "DM Serif Display", serif;
     font-weight: 100;
 }
 
 p, ol{
     font-family: 'Open Sans', sans-serif;
 }
+
 #navigation a:hover, #navigation a.active:hover{
     color: white;
     background-color: black;
@@ -98,19 +106,18 @@ p, ol{
     main{
         grid-template-columns: 1fr 1fr;
     }
+    #scenarioSection{
+        grid-column:1/3;
+    }
 }
 @media only screen and (min-width: 54.5em){
     #navigation{
         width: 800px;
         margin: auto;
     }
+
 }
 
-img{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
 
 footer{
     background-color:skyblue;

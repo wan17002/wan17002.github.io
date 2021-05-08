@@ -1,12 +1,29 @@
 
 /* Small/Phone View ***************/
 body{
-    background-color: white;
+    background-color: #083D77;
+    max-width: 1000px;
+    margin: 0 auto;
     text-align: center;
+}
+main{
+    background-color: white;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+}
+section{
+    padding: .5em;
+}
+h1{
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 nav{
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     background-color: skyblue;
 }
 #navigation{
@@ -38,10 +55,24 @@ Don't display them*/
     font-weight: 700;
     font-family: "DM Serif Display", serif;
 }
-h2, h3, h4, h5, h6, p{
-    font-family: "DM Serif Text", serif;
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "DM Serif Display", serif;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h2, h3, h4{
+    font-family: "DM Serif Display", serif;
     font-weight: 100;
 }
+
+p, ol{
+    font-family: 'Open Sans', sans-serif;
+}
+
 #navigation a:hover, #navigation a.active:hover{
     color: white;
     background-color: black;
@@ -49,20 +80,15 @@ h2, h3, h4, h5, h6, p{
 #navigation a.active{
     background-color: rgba(0,0,0,.55);
     color: white;
-    /* border-bottom:5px solid black; */
 }
 
-/*need the responsive. Then nav won't click out if there's no responsive */
 #navigation.responsive li{
     display:block;
 }
-/* We're using a media query. If the screen is at least 34.5em, then we execute*/
 @media only screen and (min-width: 34.5em){
     nav{
         max-width: 100%;
     }
-    /*We have seven items, so we're going to make 7 columns*/
-    /*He typically uses fr, but we're using auto this time. It depends on what text is inside*/
     #navigation{
         grid-template-columns:repeat(4, auto);
     }
@@ -76,13 +102,32 @@ h2, h3, h4, h5, h6, p{
     #navigation a{
         text-align: center;
     }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    #logoSection{
+        grid-column: 2;
+    }
 }
-/*Brother Hayes switches the min-width depending on his design*/
 @media only screen and (min-width: 54.5em){
-    /*Notice how we're changing #navigation rather than the nav bar itself, so */
     #navigation{
         width: 800px;
-        /*16px top and bottom, and autos the margin left and right*/
-        margin: 16px auto;
+        margin: auto;
     }
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color:skyblue;
+    text-align: center;
+}
+footer h4{
+    margin: 0;
 }

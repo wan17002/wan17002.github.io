@@ -1,3 +1,4 @@
+
 /* Small/Phone View ***************/
 body{
     background-color: #083D77;
@@ -10,11 +11,32 @@ main{
     margin: 0;
     padding: 1em;
 }
+section{
+    padding: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 h1{
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: "DM Serif Display", serif;
 }
+.underlineText{
+    text-decoration: underline;
+}
+.columnTwo{
+    grid-column: 2;
+}
+h2, h3, h4{
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+}
+
+p, ol{
+    font-family: 'Open Sans', sans-serif;
+}
+
 nav{
     width: 100%;
     margin: 0;
@@ -49,23 +71,7 @@ Don't display them*/
     font-weight: 700;
     font-family: "DM Serif Display", serif;
 }
-h1{
-    text-align: center;
-    text-decoration: underline;
-    margin-bottom: 5px;
-    font-family: "DM Serif Display", serif;
-}
-h2{
-    text-align: center;
-    text-decoration: underline;
-}
-h2, h3, h4{
-    font-weight: 100;
-}
 
-p, ol{
-    font-family: 'Open Sans', sans-serif;
-}
 #navigation a:hover, #navigation a.active:hover{
     color: white;
     background-color: black;
@@ -98,6 +104,9 @@ p, ol{
     main{
         grid-template-columns: 1fr 1fr;
     }
+    #logoSection{
+        grid-column: 2;
+    }
 }
 @media only screen and (min-width: 54.5em){
     #navigation{
@@ -109,7 +118,6 @@ p, ol{
 img{
     max-width: 100%;
     height: auto;
-    margin: 0 auto;
 }
 
 footer{

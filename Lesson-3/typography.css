@@ -42,6 +42,9 @@ nav{
     margin: 0;
     background-color: skyblue;
 }
+nav ul{
+    margin: 0;
+}
 #navigation{
     /* takes bullet points off */
     list-style: none;

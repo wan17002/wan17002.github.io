@@ -1,11 +1,13 @@
+
 /* Small/Phone View ***************/
 body{
     background-color: white;
+    text-align: center;
 }
 nav{
+    width: 100%;
     margin: 0 auto;
-    max-width: 360px;
-    background-color: #12aaeb;
+    background-color: skyblue;
 }
 #navigation{
     /* takes bullet points off */
@@ -34,6 +36,11 @@ Don't display them*/
     text-decoration: none;
     color: black;
     font-weight: 700;
+    font-family: "DM Serif Display", serif;
+}
+h2, h3, h4, h5, h6, p{
+    font-family: "DM Serif Text", serif;
+    font-weight: 100;
 }
 #navigation a:hover, #navigation a.active:hover{
     color: white;
@@ -57,7 +64,7 @@ Don't display them*/
     /*We have seven items, so we're going to make 7 columns*/
     /*He typically uses fr, but we're using auto this time. It depends on what text is inside*/
     #navigation{
-        grid-template-columns:repeat(7, auto);
+        grid-template-columns:repeat(4, auto);
     }
     #navigation li{
         display: block; /*change state in small view */

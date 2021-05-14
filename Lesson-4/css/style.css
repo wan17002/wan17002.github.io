@@ -1,0 +1,67 @@
+/* Small/Phone View ***************/
+#siteNameDiv{
+    display: flex;
+}
+body{
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#siteNameDiv{
+    background-color: #083D77;
+}
+
+nav{
+    margin: 0 auto;
+    background-color: #87CEEB;
+}
+#navigation{
+    /* takes bullet points off */
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+    margin: 0;
+}
+/* takes the first-child that's an li of the navigation and display block
+says "turn it on as a normal block element
+ */
+#navigation li:first-child{
+    display: block;
+}
+/* This one tells every other element in the list to turn off. 
+Don't display them*/
+#navigation li{
+    display: none;
+}
+#navigation a{
+/* this allows the whole area to be clickable */
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    /*takes off the underline*/
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover{
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+    /* border-bottom:5px solid black; */
+}
+
+/*need the responsive. Then nav won't click out if there's no responsive */
+#navigation.responsive li{
+    display:block;
+}
+
+#weatherSummaryDiv{
+    margin: 15px;
+    padding: 2px;
+    border: #FFAF54 solid 2px;
+    background-color: white;
+}

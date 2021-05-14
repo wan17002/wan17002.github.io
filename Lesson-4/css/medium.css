@@ -1,0 +1,47 @@
+@media only screen and (min-width: 34.5em){
+    nav{
+        max-width: 100%;
+    }
+    /*We have seven items, so we're going to make 7 columns*/
+    /*He typically uses fr, but we're using auto this time. It depends on what text is inside*/
+    #navigation{
+        grid-template-columns:repeat(7, auto);
+    }
+    #navigation li{
+        display: block; /*change state in small view */
+    }
+    /*Hides the hamburger menu. The 3 lines at the button*/
+    #navigation li:first-child{
+        display: none;
+    }
+    #navigation a{
+        text-align: center;
+    }
+
+    #summarySection{
+        background-image: url("/Lesson-4/images/placeholder-image-banner.png");
+    }
+    #summarySection img{
+        width: 0%;
+    }
+    #summarySection{
+        display: flex;
+    }
+    #weatherSummaryDiv{
+        width: 20em;
+        text-align: center;
+    }
+    #weatherSummaryDiv h3{
+        margin: 0;
+        padding: 10px 0px 10px 10px;;
+    }
+    #weatherSummaryDiv p{
+        margin: 0;
+        padding: 0px 10px 10px 10px;
+    }
+
+    #forecastImagesDiv{
+        display: flex;
+        justify-content: space-around;
+    }
+}

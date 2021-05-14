@@ -1,19 +1,74 @@
 /* Small/Phone View ***************/
+.zeroMargin{
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h2, h3, h4{
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color:#083D77;
+}
+#menuSpan{
+    margin: auto 0;
+    margin-left: auto;
+    padding-right: 10px;
+}
+header span a{
+    color: white;
+    margin-left: auto;
+}
+header img{
+    width: 3rem;
+    height: 3rem;
+    padding: 5px;
+}
+header h1{
+    font-size: 1rem;
+    margin: 0;
+}
+header p{
+    font-size: .7rem;
+    margin: 0;
+}
 #siteNameDiv{
     display: flex;
+}
+#siteNameSpan{
+    margin: auto 0;
+    margin-right: auto;
+    color: white;
+}
+#siteNameDiv span p{
+    margin-left: .5rem;
+    
 }
 body{
     background-color: white;
     max-width: 1000px;
     margin: 0 auto;
+    width: 100%;
+}
+img{
+    max-width: 100%;
 }
 #siteNameDiv{
     background-color: #083D77;
 }
 
 nav{
-    margin: 0 auto;
-    background-color: #87CEEB;
+    margin-left: auto;
 }
 #navigation{
     /* takes bullet points off */
@@ -25,10 +80,10 @@ nav{
 }
 /* takes the first-child that's an li of the navigation and display block
 says "turn it on as a normal block element
- */
+
 #navigation li:first-child{
     display: block;
-}
+}*/
 /* This one tells every other element in the list to turn off. 
 Don't display them*/
 #navigation li{
@@ -41,12 +96,11 @@ Don't display them*/
     text-align: left;
     /*takes off the underline*/
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 700;
 }
 #navigation a:hover, #navigation a.active:hover{
-    color: white;
-    background-color: black;
+    text-decoration: underline 5px #FFAF54;
 }
 #navigation a.active{
     background-color: rgba(0,0,0,.55);
@@ -59,9 +113,70 @@ Don't display them*/
     display:block;
 }
 
+main, footer{
+    padding: 10px;
+}
+main h2{
+    text-align: left;
+}
+
+#summarySection img{
+    width: 100%;
+}
+
 #weatherSummaryDiv{
     margin: 15px;
-    padding: 2px;
+    padding: 10px;
     border: #FFAF54 solid 2px;
     background-color: white;
+}
+#forecastImagesDiv img{
+    display: none;
+}
+#articleSection{
+    border: #FFAF54 solid 2px;
+    padding: 10px;
+}
+
+footer{
+    padding: 0;
+}
+
+#infoSection{
+    display: grid;
+    color: white;
+    /*background-color:#87CEEB;*/
+    background-color: #083D77;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#contactInfoDiv{
+    padding: 10px;
+    margin: 0;
+    width: 10em;
+    width: auto;
+    max-width: 100%;
+}
+#socialMediaImages img{
+    display: none;
+}
+#prestonMap{
+    margin: auto;
+}
+#companyAddress{
+    display:none;
+}
+hr{
+    color: white;
+    background-color: #083D77;
+}
+#footerBar{
+    border-top: white 2px dotted;
+    color:white;
+    background-color: #083D77;
+    padding: 10px;
+}
+#footerBar a{
+    color:inherit;
 }

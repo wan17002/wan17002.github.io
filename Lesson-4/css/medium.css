@@ -1,6 +1,23 @@
 @media only screen and (min-width: 34.5em){
+    header{
+        display:block;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header p{
+        font-size-adjust: .5em;
+    }
+    header img{
+        height: 5rem;
+        width: 5rem;
+    }
+    #menuSpan{
+        display: none;
+    }
     nav{
         max-width: 100%;
+        background-color: #87CEEB;
     }
     /*We have seven items, so we're going to make 7 columns*/
     /*He typically uses fr, but we're using auto this time. It depends on what text is inside*/
@@ -16,16 +33,30 @@
     }
     #navigation a{
         text-align: center;
+        color: #2E4057;
     }
 
     #summarySection{
         background-image: url("/Lesson-4/images/placeholder-image-banner.png");
+        padding: 10px;
     }
     #summarySection img{
-        width: 0%;
+        display: none;
     }
-    #summarySection{
-        display: flex;
+    #forecastImagesDiv img{
+        display: block;
+        padding: 10px;
+    }
+
+    #articleSection div{
+        display:inline-flex;
+
+    }
+    #articleSection div img{
+        min-width: 20em;
+        max-height: 150px;
+        margin: 0;
+
     }
     #weatherSummaryDiv{
         width: 20em;
@@ -43,5 +74,34 @@
     #forecastImagesDiv{
         display: flex;
         justify-content: space-around;
+    }
+    #forecastImagesDiv img{
+        width: 5rem;
+    }
+
+    #infoSection{
+        grid-template-columns: 1fr 1fr;
+    }
+    #socialMediaImages{
+        display: flex;
+        justify-content: space-around;
+    }
+    #socialMediaImages img{
+        display:block;
+        width: 5rem;
+    }
+    #footerBar{
+        border-top: none;
+        background-color: #87CEEB;
+        color: #2E4057;
+    }
+    #footerBar p{
+        margin: 0;
+    }
+    #companyAddress{
+        display: block;
+    }
+    #prestonMap{
+        width: auto;
     }
 }

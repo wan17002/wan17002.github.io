@@ -6,7 +6,7 @@
         font-size: 2rem;
     }
     header p{
-        font-size-adjust: .5em;
+        font-size: .8rem;
     }
     header img{
         height: 5rem;
@@ -34,8 +34,8 @@
     #navigation a{
         text-align: center;
         color: #2E4057;
+        border-bottom: 5px #87CEEB solid;
     }
-
     #summarySection{
         background-image: url("/Lesson-4/images/placeholder-image-banner.png");
         padding: 10px;

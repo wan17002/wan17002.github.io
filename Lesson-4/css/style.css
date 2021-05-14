@@ -98,9 +98,10 @@ Don't display them*/
     text-decoration: none;
     color: white;
     font-weight: 700;
+    border-bottom: 5px #083D77 solid;
 }
 #navigation a:hover, #navigation a.active:hover{
-    text-decoration: underline 5px #FFAF54;
+    border-bottom: 5px #FFAF54 solid;
 }
 #navigation a.active{
     background-color: rgba(0,0,0,.55);

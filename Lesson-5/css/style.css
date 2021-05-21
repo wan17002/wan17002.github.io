@@ -229,3 +229,6 @@ hr{
 #announcementBar img{
     width: 100px;
 }
+iframe{
+    width: 100%;
+}

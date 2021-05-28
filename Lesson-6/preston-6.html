@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Near Me</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    
+</head>
+<body>
+    <header>
+         <!-------------------------------------Announcement Div---------------------------------------------------------------------->
+        <div id="announcementBar">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+            <hr>
+        </div>
+        
+        <!-------------------------------------Logo Bar---------------------------------------------------------------------->
+        <div id="siteNameDiv">
+            <img src="images/weather-icon-small.png" alt="weatherNearMe logo">
+            <div id="siteNameSpan">
+                <h1>Weather Near Me</h1>
+                <p>What's the Weather?!</p>
+                
+            </div>
+            <span id="menuSpan"><a class="ham" href="#">&#9776;</a></span>
+        </div>
+         <!-------------------------------------Navigation Bar---------------------------------------------------------------------->
+        <nav>
+            <ul id="navigation">
+                
+                <li><a href="/html/index.html">Home</a></li>
+                <li><a class="active" href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-------------------------------------Weather Summary---------------------------------------------------------------------->
+    <main>
+        <h2 class="zeroMargin">Preston Idaho</h2>
+        <section id="summarySection">
+            <img id="siteBanner" src="images/sky.jpeg" alt="picture of the sky">
+            
+            <div id="weatherSummaryDiv">    
+                <h3>Weather Summary</h3>
+                <p>Currently: <span>Rainy</span></p>
+                <p>High: <span id="temperature">54</span><span>&#176;</span></p>
+                <p>Wind Chill: <span id="windChill"></span><span id="tempSymbol"></span></p>
+                <p>Humidity: <span id="humidity">95</span><span>%</span></p>
+                <p>Wind Speed: <span id="windSpeed">12</span><span>mph</span></p>
+            </div>
+        </section>
+         <!-------------------------------------Five Day Forecast---------------------------------------------------------------------->
+        <section id="forecastSection">
+            <h2>Five Day Forecast</h2>
+            <div id ="forecastImagesDiv">
+                <img src="images/rainIcon.png" alt="rainy day">
+                <img src="images/sunCloud.png" alt="cloudy day">
+                <img src="images/sunCloudLightning.png" alt="thunderstorm">
+                <img src="images/sunCloudSnowIcon.png" alt="snow">
+                <img src="images/sunCloudWindy.png" alt="windy">
+            </div>
+        </section>
+         <!-------------------------------------Articles---------------------------------------------------------------------->
+        <section id="articleSection">
+            <h3>Article Title</h3>
+            <div>
+                <img src="images/dock.jpeg" alt="person at the dock">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo nisl eget tellus varius, eu tincidunt erat consectetur. Nam arcu velit, pulvinar ut imperdiet sit amet, feugiat at felis. Sed accumsan placerat urna, ac aliquet nibh posuere ac. Praesent eget nibh felis. Sed suscipit neque tincidunt dolor sagittis lobortis. Vestibulum rutrum mauris vel lectus tincidunt, nec consequat tellus vestibulum. Vivamus dui risus, viverra ac diam nec, pellentesque elementum est.</p>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+         <!-------------------------------------Contact Information for Footer---------------------------------------------------------------------->
+        <section id="infoSection">
+            <div id="contactInfoDiv">
+                <h3>Contact Information</h3>
+                <p id="companyAddress">67675 placeholderStreet, Preston Idaho 83263</p>
+                <p>(555) 555-5555</p>
+                <p>placeholder@email.com</p>
+                <div id="socialMediaImages">
+                    <a href="https://www.instagram.com"><img src="images/instagramLogo.png" alt="Instagram Logo"></a>
+                    <a href="https://www.twitter.com"><img src="images/twitterLogo.png" alt="Twitter Logo"></a>
+                    <a href="https://www.facebook.com"><img src="images/facebookLogo.png" alt="Facebook Logo"></a>
+                </div>
+            </div>
+           
+            <!--<img src="images/preston-map.JPG" alt="map of preston">-->
+            <picture>
+                <source media="(min-width:980px)" srcset="images/preston-map-large.jpg">
+                <source media="(min-width:580px)" srcset="/Lesson-6/images/preston-map-medium.jpg">
+                <img src="/Lesson-6/Images/preston-map-small.JPG" alt="map of preston" style="width:auto;">
+            </picture>
+            
+        </section>
+         <!-------------------------------------Footer Bar---------------------------------------------------------------------->
+        <section id="footerBar">
+            <p>
+                &copy; <span id='inputCurrentYear'></span> | Stephen Wang | Texas | <a href="https://www.byui.edu/online">BYUI</a> | 
+                <span id="inputCurrentDate"></span>
+            </p>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+</html>

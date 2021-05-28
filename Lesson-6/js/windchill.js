@@ -1,5 +1,4 @@
 window.onload = windChillCalc()
-setInterval(windChillCalc, 60000);
 function windChillCalc(){
     var temperature = document.getElementById("temperature").innerText;
     var windSpeed = document.getElementById('windSpeed').innerText;

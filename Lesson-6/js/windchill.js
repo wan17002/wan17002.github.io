@@ -1,7 +1,7 @@
 window.onload = windChillCalc()
 function windChillCalc(){
-    var temperature = document.getElementById("temperature").innerText;
-    var windSpeed = document.getElementById('windSpeed').innerText;
+    var temperature = document.querySelector("#temperature").textContent;
+    var windSpeed = document.querySelector('#windSpeed').textContent;
 
     
     

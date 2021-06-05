@@ -48,7 +48,24 @@
         border-top: 5px #FFAF54 solid;
         border-bottom: 5px #FFAF54 solid;
     }
-    
+    #infoSection{
+        grid-template-columns: 1fr 1fr;
+    }
+    #socialMediaImages{
+        display: flex;
+    }
+    #socialMediaImages img{
+        display:block;
+        width: 3rem;
+        margin-right: 15px;
+        margin-bottom: 15px
+    }
+    #socialMediaImages img:hover{
+        width: 3.5rem;
+        margin-right: 7px;
+        margin-bottom: 5px;
+
+    }
     #footerBar{
         border-top: none;
         background-color: #87CEEB;
@@ -62,7 +79,7 @@
         display: block;
     }
     #prestonMap{
-        width: auto;
+        width: 100%;
     }
 
     #announcementBar{

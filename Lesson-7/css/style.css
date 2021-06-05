@@ -120,7 +120,10 @@ Don't display them*/
 #navigation.responsive li{
     display:block;
 }
-
+#preston-map{
+    width: 100%;
+    margin: 0 auto;
+}
 main, footer{
     padding: 10px;
 }
@@ -128,7 +131,39 @@ main h2{
     text-align: left;
 }
 
+footer{
+    padding: 0;
+}
 
+#infoSection{
+    display: grid;
+    color: white;
+    /*background-color:#87CEEB;*/
+    background-color: #083D77;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#contactInfoDiv{
+    padding: 10px;
+    margin: 0;
+    width: 10em;
+    width: auto;
+    max-width: 100%;
+}
+#socialMediaImages img{
+    display: none;
+}
+#prestonMap{
+    margin: auto;
+}
+#companyAddress{
+    display:none;
+}
+hr{
+    color: white;
+    background-color: #083D77;
+}
 #footerBar{
     border-top: white 2px dotted;
     color:white;

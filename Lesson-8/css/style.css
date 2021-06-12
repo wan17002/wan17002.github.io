@@ -198,15 +198,7 @@ input{
 #radioDiv input{
     margin: 20px;
 }
-#submitButton{
-    color: black;
-    font-weight: bold;
-    background-color: #FFAF54;
-    border-color: black;
-}
-#submitButton:hover{
-    box-shadow: 6px 4px 13px 1px #000000;
-}
+
 #thankYou{
     text-align: center;
 }
@@ -235,4 +227,28 @@ input{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+#radioDiv:first-child{
+    margin-right: 0px;
+}
+#radioDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
 
+}
+
+
+#submitButton{
+    color: black;
+    font-weight: bold;
+    background-color: #FFAF54;
+    border-color: white;
+    transition: all 300ms ease;
+    border: 2px #FFAF54 solid;
+}
+#submitButton:hover{
+    border: 2px black dashed;
+    background-color: #ffac4d;
+    transform: scale(1.01);
+    
+}

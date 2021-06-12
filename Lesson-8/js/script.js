@@ -1,15 +1,3 @@
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
-}
-function selectResponse() {
-	const s = document.querySelector('#selected')
-	const sel = document.querySelector('#selectbrowser');
-	s.style.display = "block";
-	s.textContent = sel.value;
-	
-}
-
-
 //Wednesday 24, July 2020
 window.onload = findTime();
 setInterval(findTime(),600000);
@@ -22,11 +10,7 @@ function findTime(){
 
     let myElement = document.querySelector("#announcementBar");
     
-    if (currentDayofWeek == "Friday"){
-        myElement.style.display = "block";
-    }else{
-        myElement.style.display = "none";
-    }
+
     
     var currentDate = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
@@ -111,4 +95,17 @@ function findCurrentDayofMonth(){
     }
     return currentDayofMonth
 }
+
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectbrowser');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
+
 

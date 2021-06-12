@@ -200,3 +200,12 @@ input{
 #radioDiv input{
     margin: 20px;
 }
+#submitButton{
+    color: black;
+    font-weight: bold;
+    background-color: #FFAF54;
+    border-color: black;
+}
+#submitButton:hover{
+    box-shadow: 6px 4px 13px 1px #000000;
+}

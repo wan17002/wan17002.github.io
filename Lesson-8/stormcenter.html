@@ -47,7 +47,7 @@
             <fieldset id="userInfo">
                 <legend><h3>User Information</h3></legend>
                 <div><label>Name:
-                    <input type="text" id="formFullName" placeholder="John Doe" required pattern"[A-Za-z]"">
+                    <input type="text" id="formFullName" placeholder="John Doe" required pattern="[A-Za-z]">
                 </label>
                 <label>Email:
                     <input type="email" id="formEmail" placeholder="xyz@email.com">
@@ -95,6 +95,7 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
+                <br>
                 <label>Region
                     <select name="stormRegion" id="formStormRegion" onchange="selectResponse()">
                         <option value="" disabled selected>Select Region</option>
@@ -119,7 +120,7 @@
             </fieldset>
 
                 
-            <button type="submit" onclick="submitForm()">Submit</button>
+            <button type="submit" onclick="submitForm()" id="submitButton">Submit</button>
         </form>
         
     </main>

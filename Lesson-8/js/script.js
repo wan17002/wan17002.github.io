@@ -1,3 +1,14 @@
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#selectbrowser');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
+
 
 //Wednesday 24, July 2020
 window.onload = findTime();
@@ -33,7 +44,7 @@ window.addEventListener('load', () =>{
 function findCurrentDayofWeek(){
     var currentDayofWeekNum = new Date().getDay();
     switch(currentDayofWeekNum){
-        case currentDayofWeekNum == 0:
+        case currentDayofWeekNum = 0:
             currentDayofWeek = "Sunday";
             break;
         case currentDayofWeekNum = 1:

@@ -45,7 +45,7 @@
 
             <!---------------------------- USER INFORMATION SECTION------------------------------------->
             <fieldset id="userInfo">
-                <legend>User Information</legend>
+                <legend><h3>User Information</h3></legend>
                 <div><label>Name:
                     <input type="text" id="formFullName" placeholder="John Doe" required pattern"[A-Za-z]"">
                 </label>
@@ -65,7 +65,7 @@
 
             <!--------------------------- STORM INFORMATION SECTION ----------------------------------->
             <fieldset id="stormInfo">
-                <legend>Storm Information</legend>
+                <legend><h3>Storm Information</h3></legend>
                 <label>Storm Type
                     <input list="stormTypes" id="formStormType" placeholder="Storm Type">
                 </label>
@@ -106,19 +106,13 @@
             </fieldset>
             <!-------------------------- USER IN DANGER? SECTION -------------------------->
             <fieldset id="additionalInfo">
-                <legend>Additional Information<em>(Choose one)</em></legend>
+                <legend><h3>Additional Information</h3></legend>
                 <div id="radioDiv">
-                    <label>User in Danger?
-                        <div class="selection">
-                            <input type="radio" name="danger"checked>Yes</label>
-                        </div>
-                        <div class="selection">
+                    <label>User in Danger? <em>(Choose one)</em>
+                            <label><input type="radio" name="danger"checked>Yes</label>
                             <label><input type="radio" name="danger">Maybe</label>
-                        </div>
-                        <div class="selection">
-                            <input type="radio" id="time3" name="danger">
-                            <label for="time3">No</label>
-                        </div>
+                            <label><input type="radio" id="time3" name="danger">No</label>
+                    </label>
                 </div>
                 </label>
                 <label>Additional Comments?<br><textarea placeholder="Enter text here..."></textarea></label>

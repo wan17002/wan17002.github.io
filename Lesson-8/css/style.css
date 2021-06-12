@@ -182,9 +182,7 @@ form{
     margin: 0 auto;
 }
 
-input{
-    margin: 5px;
-}
+
 fieldset{
     text-align: center;
 }
@@ -193,6 +191,12 @@ fieldset{
     height: 100px;
     margin: 0 auto;
 }
-fieldset label{
+fieldset label, form legend{
     font-weight: bold;
+}
+input{
+    margin: 10px;
+}
+#radioDiv input{
+    margin: 20px;
 }

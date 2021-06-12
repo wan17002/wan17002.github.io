@@ -51,21 +51,23 @@
             <!---------------------------- USER INFORMATION SECTION------------------------------------->
             <fieldset id="userInfo">
                 <legend><h3>User Information</h3></legend>
-                <div><label>*Name:
+                <div id="userInfoDiv">
+                <label>*Name:
                     <input type="text" id="formFullName" name="fullName" placeholder="John Doe" required pattern="^[A-Za-z]{3,}$">
                 </label>
                 <label>Email:
                     <input type="email" id="formEmail" name="email" placeholder="xyz@email.com">
-                </label></div>
-                <div><label>*Number:
+                </label>
+                <label>*Number:
                     <input type="tel" id="formPhone" name="phoneNumber" placeholder="###-###-####" required>
                 </label>
                 <label>*Zip Code:
                     <input type="number" id="formZip" name="zipCode" pattern="(\d{5}([\-]\d{4})?)" placeholder="#####" required>
-                </label></div>
-                <div></div><label>Date:
+                </label>
+                <label id="dateLabel">Date:
                     <input type="date" name="date" id="formDate">
-                </label></div>
+                </label>
+            </div>
             </fieldset>
 
             <!--------------------------- STORM INFORMATION SECTION ----------------------------------->

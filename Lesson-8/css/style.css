@@ -176,12 +176,10 @@ hr{
 
 form{
     display: grid;
-    grid-template-rows: fit fit fit;
     grid-gap: 10px;
     width: 70%;
     margin: 0 auto;
 }
-
 
 fieldset{
     text-align: center;
@@ -230,3 +228,11 @@ input{
     margin: 0;
     padding: 0;
 }
+
+
+#userInfoDiv{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+

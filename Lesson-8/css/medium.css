@@ -93,8 +93,11 @@
         width: 95%;
         height: 95%;
     }
-
-    #gallerySection{
+    #userInfoDiv{
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #dateLabel{
+        grid-column: 1/3;
     }
 }

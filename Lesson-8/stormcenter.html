@@ -15,6 +15,11 @@
 </head>
 <body>
     <header>
+        <!-------------------------------------Announcement Div---------------------------------------------------------------------->
+        <div id="announcementBar">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+            <hr>
+        </div>
         <!-------------------------------------Logo Bar---------------------------------------------------------------------->
         <div id="siteNameDiv">
             <img loading='lazy' src="images/weather-icon-small.png" alt="weatherNearMe logo">
@@ -33,33 +38,33 @@
                 <li><a href="/Lesson-6/preston-6.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a class="active"href="#">Gallery</a></li>
+                <li><a class="active" href="#">Storm Center</a></li>
+                <li><a href="/Lesson-7/gallery-7.html">Gallery</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <h1>Storm Report</h1>
-        <form>
+        <form action="thanks.html">
 
             <!---------------------------- USER INFORMATION SECTION------------------------------------->
             <fieldset id="userInfo">
                 <legend><h3>User Information</h3></legend>
                 <div><label>Name:
-                    <input type="text" id="formFullName" placeholder="John Doe" required pattern="[A-Za-z]">
+                    <input type="text" id="formFullName" name="fullName" placeholder="John Doe" required pattern="^[A-Za-z]{3,}$">
                 </label>
                 <label>Email:
-                    <input type="email" id="formEmail" placeholder="xyz@email.com">
+                    <input type="email" id="formEmail" name="email" placeholder="xyz@email.com">
                 </label></div>
                 <div><label>Number:
-                    <input type="tel" id="formPhone" placeholder="###-###-####" required>
+                    <input type="tel" id="formPhone" name="phoneNumber" placeholder="###-###-####" required>
                 </label>
                 <label>Zip Code:
-                    <input type="number" id="formZip" pattern="(\d{5}([\-]\d{4})?)" placeholder="#####" required>
+                    <input type="number" id="formZip" name="zipCode" pattern="(\d{5}([\-]\d{4})?)" placeholder="#####" required>
                 </label></div>
                 <div></div><label>Date:
-                    <input type="date" id="formDate">
+                    <input type="formDate" name="date" id="formDate">
                 </label></div>
             </fieldset>
 
@@ -67,7 +72,7 @@
             <fieldset id="stormInfo">
                 <legend><h3>Storm Information</h3></legend>
                 <label>Storm Type
-                    <input list="stormTypes" id="formStormType" placeholder="Storm Type">
+                    <input list="stormTypes" id="formStormType" name="stormType" placeholder="Storm Type">
                 </label>
                 <datalist id="stormTypes">
                     <option value="Flash Flood"></option>
@@ -78,7 +83,7 @@
                 </datalist>
                 <br>
                 <label>Severity
-                    <input type="range" name="Severity" id="formSeverity" min="1" max="10" step="1" list="ticks" 
+                    <input type="range" name="severity" id="formSeverity" min="1" max="10" step="1" list="ticks" 
                     oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 </label>
                 <span id="ratingvalue">5</span>
@@ -97,7 +102,7 @@
                 </datalist>
                 <br>
                 <label>Region
-                    <select name="stormRegion" id="formStormRegion" onchange="selectResponse()">
+                    <select name="stormRegion" id="formStormRegion" name="stormRegion" onchange="selectResponse()">
                         <option value="" disabled selected>Select Region</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
@@ -112,15 +117,15 @@
                     <label>User in Danger? <em>(Choose one)</em>
                             <label><input type="radio" name="danger"checked>Yes</label>
                             <label><input type="radio" name="danger">Maybe</label>
-                            <label><input type="radio" id="time3" name="danger">No</label>
+                            <label><input type="radio" name="danger">No</label>
                     </label>
                 </div>
                 </label>
-                <label>Additional Comments?<br><textarea placeholder="Enter text here..."></textarea></label>
+                <label>Additional Comments?<br><textarea name="comments" placeholder="Enter text here..."></textarea></label>
             </fieldset>
 
                 
-            <button type="submit" onclick="submitForm()" id="submitButton">Submit</button>
+            <button type="submit" name="submit" id="submitButton">Submit</button>
         </form>
         
     </main>

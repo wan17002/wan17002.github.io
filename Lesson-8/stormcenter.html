@@ -51,16 +51,16 @@
             <!---------------------------- USER INFORMATION SECTION------------------------------------->
             <fieldset id="userInfo">
                 <legend><h3>User Information</h3></legend>
-                <div><label>Name:
+                <div><label>*Name:
                     <input type="text" id="formFullName" name="fullName" placeholder="John Doe" required pattern="^[A-Za-z]{3,}$">
                 </label>
                 <label>Email:
                     <input type="email" id="formEmail" name="email" placeholder="xyz@email.com">
                 </label></div>
-                <div><label>Number:
+                <div><label>*Number:
                     <input type="tel" id="formPhone" name="phoneNumber" placeholder="###-###-####" required>
                 </label>
-                <label>Zip Code:
+                <label>*Zip Code:
                     <input type="number" id="formZip" name="zipCode" pattern="(\d{5}([\-]\d{4})?)" placeholder="#####" required>
                 </label></div>
                 <div></div><label>Date:
@@ -74,12 +74,12 @@
                 <label>Storm Type
                     <input list="stormTypes" id="formStormType" name="stormType" placeholder="Storm Type">
                 </label>
-                <datalist id="stormTypes">
-                    <option value="Flash Flood"></option>
-                    <option value="Hail"></option>
-                    <option value="Hurricane"></option>
-                    <option value="Thunderstorm"></option>
-                    <option value="Tornado"></option>
+                <datalist id="stormTypes" name="stormList">
+                    <option name="flashFlood" value="Flash Flood"></option>
+                    <option name="hail" value="Hail"></option>
+                    <option name="hurricane" value="Hurricane"></option>
+                    <option name="thunderStorm" value="Thunderstorm"></option>
+                    <option name="tornado" value="Tornado"></option>
                 </datalist>
                 <br>
                 <label>Severity

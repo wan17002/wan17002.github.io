@@ -1,0 +1,30 @@
+
+body{
+    font-family: Ubuntu, sans-serif;
+}
+
+thead th{
+    font-size: 25px;
+}
+th, td{
+    text-align: center;
+    border: .2px solid lightgray;
+    padding: 5px;
+}
+
+thead, tfoot{
+    background-color: #7fb9c2;
+}
+tbody th, #novemberCol2{
+    background-color:#628ca6;
+    color: white;
+}
+tbody tr{
+    background-color:#e7f0ed;
+}
+tbody tr:nth-child(odd){
+    background-color:#e7ffed;
+}
+tfoot{
+    font-size: 10px;
+}

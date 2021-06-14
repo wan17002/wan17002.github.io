@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+table{
+    font-family: 'Lato', sans-serif;
+}
+
+#statTable{
+    box-shadow: 1px 1px 10px gray;
+    margin: 10px auto;
+}
+#statTable th{
+    background-color: #004d71;
+    color: white;
+    padding: 5px;
+}
+
+#statTable tr:nth-child(even){
+    background-color: #89ABBC;
+}
+#statTable tr:nth-child(odd){
+    background-color: white;
+}
+#statTable tr td:first-of-type{
+    color:#007481;
+}
+
+#statTable tr td{
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+tr{
+    text-align: center;
+     
+}
+#statTable tr td:first-child{
+    text-align: left;
+    font-weight: bolder;
+}
+#statTable tr td:hover{
+    background-color: #7d7d80;
+    color:white;
+}
+
+.hovering:hover{
+    box-shadow: 1px 1px 10px #95D600;
+    
+}
+
+/****************STAT TABLE **************/
+#summaryTable th{
+    background-color: #004d71;
+    color: white;
+    padding: 5px;
+}
+#summaryTable td{
+    border: 1px solid black;
+    border-bottom: 1px dashed black;
+}
+.summaryText{
+    color: #DD5F13;
+    font-weight: bolder;
+}
+#teamStats{
+    border-bottom: 2px dashed #95D600;
+    font-weight: bolder;
+}

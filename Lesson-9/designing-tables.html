@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Tables</title>
+    <link href="css/designing-tables.css" rel="stylesheet">
+    
+</head>
+<body>
+    <table id="statTable" CELLSPACING="0">
+        <tr >
+            <th>Name</th>
+            <th>Serve +</th>
+            <th>Serve -</th>
+            <th>Serve E</th>
+            <th>Serve %</th>
+            <th>Pass +</th>
+            <th>Pass -</th>
+            <th>Pass E</th>
+            <th>Pass %</th>
+            <th>Hit +</th>
+            <th>Hit -</th>
+            <th>Hit E</th>
+            <th>Hit %</th>
+            <th>Block +</th>
+            <th>Block -</th>
+            <th>Block E</th>
+            <th>Block %</th>
+            <th>Points Taken</th>
+            <th>Points Given</th>
+            
+        </tr>
+        <tr class='hovering'>
+            <td>Hadley</td>
+            <td>40</td>
+            <td>57</td>
+            <td>13</td>
+            <td>24.55</td>
+            <td>16</td>
+            <td>36</td>
+            <td>12</td>
+            <td>6.25</td>
+            <td>4</td>
+            <td>30</td>
+            <td>6</td>
+            <td>-5</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>100</td>
+            <td>45</td>
+            <td>31</td>
+        </tr>
+        <tr class='hovering'>
+            <td>Lois</td>
+            <td>10</td>
+            <td>42</td>
+            <td>15</td>
+            <td>-7.46</td>
+            <td>13</td>
+            <td>28</td>
+            <td>30</td>
+            <td>23.94</td>
+            <td>2</td>
+            <td>9</td>
+            <td>5</td>
+            <td>18.75</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>12</td>
+            <td>50</td>
+        </tr>
+        <tr class='hovering'>
+            <td>Neda</td>
+            <td>20</td>
+            <td>29</td>
+            <td>12</td>
+            <td>13.11</td>
+            <td>48</td>
+            <td>74</td>
+            <td>28</td>
+            <td>13.33</td>
+            <td>11</td>
+            <td>12</td>
+            <td>8</td>
+            <td>9.68</td>
+            <td>4</td>
+            <td>1</td>
+            <td>1</td>
+            <td>50</td>
+            <td>35</td>
+            <td>49</td>
+        </tr>
+        <!--<tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>-->
+    </table>
+    <table id="summaryTable" CELLSPACING="0">
+        <tr>
+            <th id="teamStats" colspan="2">Team Statistics</th>
+        </tr>
+        <tr>
+            <th>Sets Won</th>
+            <td>14</td>
+        </tr>
+        <tr>
+            <th>Sets Lost</th>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>Matches Won</th>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th>Matches Lost</th>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>Points Earned</th>
+            <td>464</td>
+        </tr>
+        <tr>
+            <th>Points Allowed</th>
+            <td>359</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td class="summaryText">116+ Aces</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td class="summaryText">87+ Kills</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td class="summaryText">10+ Stuff Blocks</td>
+        </tr>
+        <tr>
+            <th></th>
+            <td class="summaryText">181+ Perfect Passes</td>
+        </tr>
+    </table>
+</body>
+</html>

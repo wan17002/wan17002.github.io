@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+h1{
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    grid-gap: 5px;
+}
+section{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #AFAFC1;
+    width: 300px;
+    padding-bottom: 30px;
+    border: 1px solid #4D4D96;
+}
+section img{
+    box-shadow: 5px 5px 15px 5px #000000;
+    width: 200px;
+}
+h1, h2{
+    font-family: 'Bree Serif', serif;
+    color: #4D4D96;
+}
+@media only screen and (min-width: 34.5em){
+    .cards{
+        grid-template-columns: 300px 300px;
+    }
+}
+
+@media only screen and (min-width: 54.5em){
+    .cards{
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+}

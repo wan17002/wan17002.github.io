@@ -16,12 +16,10 @@
 </head>
 <body>
     <header>
-        <!-------------------------------------Announcement Div---------------------------------------------------------------------->
         <div id="announcementBar">
             <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
             <hr>
         </div>
-        <!-------------------------------------Logo Bar---------------------------------------------------------------------->
         <div id="siteNameDiv">
             <a href="/html/index.html"><img src="images/weather-icon_50x50.png" alt="weatherNearMe logo"></a>
             <div id="siteNameSpan">
@@ -47,7 +45,7 @@
     </main>
    
     <footer>
-           <section id="infoSection">
+        <div id="infoSection">
             <div id="contactInfoDiv">
                 <h3>Contact Information</h3>
                 <p id="companyAddress">67675 placeholderStreet, Preston Idaho 83263</p>
@@ -61,18 +59,18 @@
             </div>
            
             <picture>
-                <source media="(min-width:700px)" srcset="../home-page/images/preston-map_490x251.jpg" alt="map of preston">
-                <source media="(min-width:580px)" srcset="../home-page/images/preston-map_340x174.jpg" alt="map of preston">
+                <source media="(min-width:700px)" srcset="../home-page/images/preston-map_490x251.jpg">
+                <source media="(min-width:580px)" srcset="../home-page/images/preston-map_340x174.jpg">
                 <img id="preston-map" src="../home-page/images/preston-map_282x144.jpg" alt="map of preston" loading="lazy">
             </picture>
             
-        </section>
-        <section id="footerBar">
+        </div>
+        <div id="footerBar">
             <p>
                 &copy; <span id='inputCurrentYear'></span> | Stephen Wang | Texas | <a href="https://www.byui.edu/online">BYUI</a> | 
                 <span id="inputCurrentDate"></span>
             </p>
-        </section>
+        </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>

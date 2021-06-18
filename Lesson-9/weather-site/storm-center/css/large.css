@@ -1,0 +1,17 @@
+@media only screen and (min-width: 54.5em){
+    /*Notice how we're changing #navigation rather than the nav bar itself, so */
+    #navigation{
+        width: 800px;
+        /*16px top and bottom, and autos the margin left and right*/
+        margin: 16px auto;
+    }
+    #gallerySection{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    body{
+        box-shadow: 5px 5px 15px 3px rgba(0,0,0,0.71)
+    }
+    .containerDiv p{
+        display: inline-block;
+    }
+}

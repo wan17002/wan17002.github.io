@@ -1,0 +1,210 @@
+/* Small/Phone View ***************/
+
+.zeroMargin{
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h2, h3, h4{
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color:#083D77;
+}
+#menuSpan{
+    margin: auto 0;
+    margin-left: auto;
+    padding-right: 10px;
+}
+header span a{
+    color: white;
+    margin-left: auto;
+}
+header img{
+    width: 3rem;
+    height: 3rem;
+    padding: 5px;
+}
+header h1{
+    font-size: 1rem;
+    margin: 0;
+}
+header p{
+    font-size: .7rem;
+    margin: 0;
+}
+#siteNameDiv{
+    display: flex;
+}
+#siteNameSpan{
+    margin: auto 0;
+    margin-right: auto;
+    color: white;
+}
+#siteNameDiv span p{
+    margin-left: .5rem;
+    
+}
+body{
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+#siteNameDiv{
+    background-color: #083D77;
+}
+
+nav{
+    margin-left: auto;
+}
+#navigation{
+    /* takes bullet points off */
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+    margin: 0;
+}
+/* takes the first-child that's an li of the navigation and display block
+says "turn it on as a normal block element
+
+#navigation li:first-child{
+    display: block;
+}*/
+/* This one tells every other element in the list to turn off. 
+Don't display them*/
+#navigation li{
+    display: none;
+}
+#navigation a{
+/* this allows the whole area to be clickable */
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    /*takes off the underline*/
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border-bottom: 5px #083D77 solid;
+    border-top: 2px #083D77 solid;
+}
+#navigation a:hover, #navigation a.active:hover{
+    border-bottom: 5px #FFAF54 solid;
+    border-radius: 12px;
+    border-top:black 2px solid;
+}
+#navigation a.active{
+    border-radius: 12px;
+    border-top: 5px #FFAF54 solid;
+    border-bottom: black 2px solid;
+    
+    /* border-bottom:5px solid black; */
+}
+.ham{
+    text-decoration: none;
+}
+/*need the responsive. Then nav won't click out if there's no responsive */
+#navigation.responsive li{
+    display:block;
+}
+
+
+footer{
+    padding: 0;
+}
+
+#infoSection{
+    display: grid;
+    color: white;
+    /*background-color:#87CEEB;*/
+    background-color: #083D77;
+    padding: 10px;
+    max-width: 100%;
+}
+
+#contactInfoDiv{
+    padding: 10px;
+    margin: 0;
+    width: 10em;
+    width: auto;
+    max-width: 100%;
+}
+#socialMediaImages img{
+    display: none;
+}
+#prestonMap{
+    margin: auto;
+    justify-content: center;
+}
+picture{
+    margin: auto;
+}
+#companyAddress{
+    display:none;
+}
+hr{
+    color: white;
+    background-color: #083D77;
+}
+#footerBar{
+    border-top: white 2px dotted;
+    color:white;
+    background-color: #083D77;
+    padding: 10px;
+}
+#footerBar a{
+    color:inherit;
+}
+
+#announcementBar{
+    background-color:#FFAF54;
+    margin: 0;
+    color: white;
+}
+
+#announcementBar h2{
+    text-align: center;
+    margin:0;
+    padding: 8px;
+    text-shadow: -1px -1px 0 #083D77, 1px -1px 0 #083D77, -1px 1px 0 #083D77, 1px 1px 0 #083D77;
+    text-decoration: none;
+}
+#announcementBar hr{
+    border-bottom: 2px dotted white;
+    margin: 0;
+    padding: 0;
+}
+
+#content section{
+    text-align: center;
+    border: 2px solid #FFAF54;
+    margin: 15px;
+}
+#content section div{
+    text-align: center;
+    font-size: 1.5rem;
+}
+#content section img{
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 5px;
+    box-shadow:5px 5px 15px 5px #000000;
+    
+}
+#content section img:hover{
+    transform: scale(1.05);
+
+}

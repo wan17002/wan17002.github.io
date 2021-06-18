@@ -1,0 +1,98 @@
+@media only screen and (min-width: 34.5em){
+    header{
+        display:block;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    header p{
+        font-size: .8rem;
+    }
+    header img{
+        height: 5rem;
+        width: 5rem;
+    }
+    #menuSpan{
+        display: none;
+    }
+    nav{
+        max-width: 100%;
+        background-color: #87CEEB;
+    }
+    /*We have seven items, so we're going to make 7 columns*/
+    /*He typically uses fr, but we're using auto this time. It depends on what text is inside*/
+    #navigation{
+        grid-template-columns:repeat(6, auto);
+    }
+    #navigation li{
+        display: block; /*change state in small view */
+    }
+    /*Hides the hamburger menu. The 3 lines at the button*/
+    /*#navigation li:first-child{
+        display: none;
+    }*/
+    #navigation a{
+        text-align: center;
+        color: #2E4057;
+        border: 5px #87CEEB solid;
+        margin: 2px;
+    }
+    #navigation a.active{
+        border-bottom: none;
+    }
+    
+    #navigation a:hover{
+        border-top: 5px #87CEEB solid;
+    }
+    #navigation a.active:hover{
+        border-top: 5px #FFAF54 solid;
+        border-bottom: 5px #FFAF54 solid;
+    }
+    #infoSection{
+        grid-template-columns: 1fr 1fr;
+    }
+    #socialMediaImages{
+        display: flex;
+    }
+    #socialMediaImages img{
+        display:block;
+        width: 3rem;
+        margin-right: 15px;
+        margin-bottom: 15px
+    }
+    #socialMediaImages img:hover{
+        transform: scale(1.3);
+
+    }
+    #footerBar{
+        border-top: none;
+        background-color: #87CEEB;
+        color: #2E4057;
+    }
+    #footerBar p{
+        margin: 0;
+        text-align: center;
+    }
+    #companyAddress{
+        display: block;
+    }
+    #prestonMap{
+        width: 100%;
+    }
+
+    #announcementBar{
+        position: sticky;
+        top: 0px;
+    }
+    #announcementBar h2{
+        position: relative;
+    }
+    iframe{
+        width: 95%;
+        height: 95%;
+    }
+
+    #gallerySection{
+        grid-template-columns: 1fr 1fr;
+    }
+}

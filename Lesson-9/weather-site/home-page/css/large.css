@@ -1,0 +1,35 @@
+@media only screen and (min-width: 54.5em){
+    /*Notice how we're changing #navigation rather than the nav bar itself, so */
+    body{
+
+    }
+    #navigation{
+        width: 100%;
+        /*16px top and bottom, and autos the margin left and right*/
+        
+    }
+    #content{
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        justify-content: space-evenly;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+    }
+    #content section{
+        display:block;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    #content section div{
+        display: grid;
+        grid-template-rows: 75px 40px 40px 40px 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 0px;
+    }
+    #content section img{
+        width: 220px;
+    }
+}

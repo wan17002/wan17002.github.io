@@ -1,4 +1,4 @@
-async function getTown(){
+function getTown(){
     const url = "https://byui-cit230.github.io/weather/data/towndata.json";
     
     const response = await fetch(url);

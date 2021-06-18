@@ -1,8 +1,5 @@
-//Wednesday 24, July 2020
-window.onload = findTime();
-setInterval(findTime(),600000);
 
-function findTime(){
+window.addEventListener('load', () =>{
     var currentYear = new Date().getFullYear();
     var currentDay = new Date().getDate();
     currentDayofWeek = findCurrentDayofWeek();
@@ -20,9 +17,6 @@ function findTime(){
     var currentDate = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
     document.getElementById('inputCurrentDate').innerHTML = currentDate;
-};
-
-window.addEventListener('load', () =>{
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');
     

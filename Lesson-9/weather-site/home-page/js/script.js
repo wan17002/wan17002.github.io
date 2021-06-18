@@ -1,7 +1,5 @@
 
 //Wednesday 24, July 2020
-window.onload = findTime();
-
 async function findTime(){
     var currentYear = new Date().getFullYear();
     var currentDay = new Date().getDate();
@@ -24,12 +22,14 @@ async function findTime(){
 window.addEventListener('load', () =>{
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');
+
+    findTime();
     
     hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
     window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 });
 
-async function findCurrentDayofWeek(){
+function findCurrentDayofWeek(){
     var currentDayofWeekNum = new Date().getDay();
     switch(currentDayofWeekNum){
         case currentDayofWeekNum == 0:
@@ -57,7 +57,7 @@ async function findCurrentDayofWeek(){
     return currentDayofWeek;
 }
 
-async function findCurrentDayofMonth(){
+function findCurrentDayofMonth(){
     var currentDayofMonthNum = new Date().getMonth();
     switch(currentDayofMonthNum){
         case currentDayofMonthNum = 0:

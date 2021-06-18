@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', () =>{
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');

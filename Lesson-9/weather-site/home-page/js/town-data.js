@@ -44,17 +44,14 @@ function newTown(){
                     case "Soda Springs":
                         townPhoto.setAttribute('src', 'images/soda-springs_250x166.jpg');
                         townPhoto.setAttribute('alt', new_town[i].name);
-                        townPhoto.setAttribute('loading', 'lazy');
                         break;
                     case "Preston":
                         townPhoto.setAttribute('src', 'images/preston_250x166.jpg');
                         townPhoto.setAttribute('alt', new_town[i].name);
-                        townPhoto.setAttribute('loading', 'lazy');
                         break;
                     case "Fish Haven":
                         townPhoto.setAttribute('src', 'images/fish-haven_250x166.jpg');
                         townPhoto.setAttribute('alt', new_town[i].name);
-                        townPhoto.setAttribute('loading', 'lazy');
                         break;
                 }
                 textDiv.appendChild(h2);

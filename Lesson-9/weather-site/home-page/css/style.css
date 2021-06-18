@@ -77,6 +77,7 @@ nav{
     grid-template-columns: auto;
     display: grid;
     margin: 0;
+    max-width: 800px;
 }
 /* takes the first-child that's an li of the navigation and display block
 says "turn it on as a normal block element

@@ -252,3 +252,6 @@ input{
     transform: scale(1.01);
     
 }
+picture{
+    margin: auto;
+}

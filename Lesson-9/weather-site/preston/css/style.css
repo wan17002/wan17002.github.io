@@ -139,6 +139,7 @@ main h2{
     padding: 10px;
     border: #FFAF54 solid 2px;
     background-color: white;
+    text-align: center;
 }
 #forecastSection h2{
     margin: 0;
@@ -228,4 +229,7 @@ hr{
 }
 iframe{
     width: 100%;
+}
+picture{
+    margin: auto;
 }

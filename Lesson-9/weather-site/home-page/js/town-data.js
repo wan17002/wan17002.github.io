@@ -33,6 +33,7 @@ function newTown(){
                 let rainFall = document.createElement('p');
                 let townPhoto = document.createElement('img');
                 let textDiv = document.createElement('div');
+                document.querySelector('main').appendChild(card);
 
                 h2.textContent = new_town[i].name;
                 italics.textContent = new_town[i].motto;
@@ -63,7 +64,7 @@ function newTown(){
                 card.appendChild(townPhoto);
 
 
-                document.querySelector('main').appendChild(card);
+                
             }
             
         }

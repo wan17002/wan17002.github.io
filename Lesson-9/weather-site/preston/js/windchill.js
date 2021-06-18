@@ -1,5 +1,4 @@
-window.onload = windChillCalc()
-function windChillCalc(){
+window.addEventListener('load', () =>{
     var temperature = document.querySelector("#temperature").textContent;
     var windSpeed = document.querySelector('#windSpeed').textContent;
 
@@ -14,4 +13,4 @@ function windChillCalc(){
     }else{
         document.getElementById("windChill").innerHTML = "N/A";
     }
-}
+});

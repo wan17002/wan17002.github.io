@@ -25,7 +25,7 @@ function findTime(){
     
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
     document.getElementById('inputCurrentDate').innerHTML = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
-};
+}
 
 function findCurrentDayofWeek(){
     let currentDayofWeekNum = new Date().getDay();
@@ -97,6 +97,6 @@ function findCurrentDayofMonth(){
             currentDayofMonth = "December";
             break;
     }
-    return currentDayofMonth
+    return currentDayofMonth;
 }
 

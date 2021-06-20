@@ -29,7 +29,8 @@ function findTime(){
 };
 
 function findCurrentDayofWeek(){
-    var currentDayofWeekNum = new Date().getDay();
+    let currentDayofWeekNum = new Date().getDay();
+    let currentDayofWeek = "";
     switch(currentDayofWeekNum){
         case 0:
             currentDayofWeek = "Sunday";
@@ -57,7 +58,8 @@ function findCurrentDayofWeek(){
 }
 
 function findCurrentDayofMonth(){
-    var currentDayofMonthNum = new Date().getMonth();
+    let currentDayofMonthNum = new Date().getMonth();
+    let currentDayofMonth ="";
     switch(currentDayofMonthNum){
         case 0:
             currentDayofMonth = "January";

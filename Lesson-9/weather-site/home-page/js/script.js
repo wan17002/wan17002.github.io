@@ -2,10 +2,11 @@ window.addEventListener('load', () =>{
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');
     
+    findTime();
+    
     hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
     window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 });
-window.onload = findTime();
 //Wednesday 24, July 2020
 
 function findTime(){
@@ -26,9 +27,6 @@ function findTime(){
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
     document.getElementById('inputCurrentDate').innerHTML = currentDate;
 };
-
-
-
 
 function findCurrentDayofWeek(){
     var currentDayofWeekNum = new Date().getDay();

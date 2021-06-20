@@ -33,25 +33,25 @@ function findTime(){
 function findCurrentDayofWeek(){
     var currentDayofWeekNum = new Date().getDay();
     switch(currentDayofWeekNum){
-        case currentDayofWeekNum == 0:
+        case 0:
             currentDayofWeek = "Sunday";
             break;
-        case currentDayofWeekNum = 1:
+        case 1:
             currentDayofWeek = "Monday";
             break;
-        case currentDayofWeekNum = 2:
+        case 2:
             currentDayofWeek = "Tuesday";
             break;
-        case currentDayofWeekNum = 3:
+        case 3:
             currentDayofWeek = "Wednesday";
             break;
-        case currentDayofWeekNum = 4:
+        case 4:
             currentDayofWeek = "Thursday";
             break;
-        case currentDayofWeekNum = 5:
+        case 5:
             currentDayofWeek = "Friday";
             break;
-        case currentDayofWeekNum = 6:
+        case 6:
             currentDayofWeek = "Saturday";
             break;
     }
@@ -61,40 +61,40 @@ function findCurrentDayofWeek(){
 function findCurrentDayofMonth(){
     var currentDayofMonthNum = new Date().getMonth();
     switch(currentDayofMonthNum){
-        case currentDayofMonthNum = 0:
+        case 0:
             currentDayofMonth = "January";
             break;
-        case currentDayofMonthNum = 1:
+        case 1:
             currentDayofMonth = "February";
             break;
-        case currentDayofMonthNum = 2:
+        case 2:
             currentDayofMonth = "March";
             break;
-        case currentDayofMonthNum = 3:
+        case 3:
             currentDayofMonth = "April";
             break;
-        case currentDayofMonthNum = 4:
+        case 4:
             currentDayofMonth = "May";
             break;
-        case currentDayofMonthNum = 5:
+        case 5:
             currentDayofMonth = "June";
             break;
-        case currentDayofMonthNum = 6:
+        case 6:
             currentDayofMonth = "July";
             break;
-        case currentDayofMonthNum = 7:
+        case 7:
             currentDayofMonth = "August";
             break;
-        case currentDayofMonthNum = 8:
+        case 8:
             currentDayofMonth = "September";
             break;
-        case currentDayofMonthNum = 9:
+        case 9:
             currentDayofMonth = "October";
             break;
-        case currentDayofMonthNum = 10:
+        case 10:
             currentDayofMonth = "November";
             break;
-        case currentDayofMonthNum = 11:
+        case 11:
             currentDayofMonth = "December";
             break;
     }

@@ -9,10 +9,10 @@ window.onload = findTime();
 //Wednesday 24, July 2020
 
 function findTime(){
-    var currentYear = new Date().getFullYear();
-    var currentDay = new Date().getDate();
-    currentDayofWeek = findCurrentDayofWeek();
-    currentMonth = findCurrentDayofMonth();
+    const currentYear = new Date().getFullYear();
+    const currentDay = new Date().getDate();
+    let currentDayofWeek = findCurrentDayofWeek();
+    let currentMonth = findCurrentDayofMonth();
 
     let myElement = document.querySelector("#announcementBar");
     
@@ -22,7 +22,7 @@ function findTime(){
         myElement.style.display = "none";
     }
     
-    var currentDate = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
+    let currentDate = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
     document.getElementById('inputCurrentDate').innerHTML = currentDate;
 };

@@ -23,9 +23,8 @@ function findTime(){
         myElement.style.display = "none";
     }
     
-    let currentDate = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
-    document.getElementById('inputCurrentDate').innerHTML = currentDate;
+    document.getElementById('inputCurrentDate').innerHTML = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
 };
 
 function findCurrentDayofWeek(){

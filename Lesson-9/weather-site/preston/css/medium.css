@@ -50,7 +50,7 @@
     }
     #summarySection{
         background-image: url("/Lesson-9/weather-site/preston/images/sky_900x275.jpg");
-        background-repeat: no-repeat;
+        background-repeat:round;
         padding: 15px;
     }
     #summarySection img{

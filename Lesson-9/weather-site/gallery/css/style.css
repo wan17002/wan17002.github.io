@@ -183,10 +183,7 @@ hr{
     padding: 5px;
     margin: 0 auto;
 }
-.containerDiv:hover{
-    box-shadow: 13px 11px 15px -3px rgba(0,0,0,0.71);
-    border: none;
-}
+
 .containerDiv p{
     display: none;
     margin-top: 0px;

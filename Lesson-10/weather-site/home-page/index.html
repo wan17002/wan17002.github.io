@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <script src="js/town-data.js"></script>
+    <title>Weather Near Me</title>
+
+    
+
+    
+</head>
+<body>
+    <header>
+        <div id="announcementBar">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+            <hr>
+        </div>
+        <div id="siteNameDiv">
+            <a href="/html/index.html"><img src="images/weather-icon_50x50.png" alt="weatherNearMe logo"></a>
+            <div id="siteNameSpan">
+                <h1>Weather Near Me</h1>
+                <p>What's the Weather?!</p>
+            </div>
+            <span id="menuSpan"><a class="ham" href="#">&#9776;</a></span>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a class="active" href="../home-page/index.html">Home</a></li>
+                <li><a href="../preston/preston-6.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Our Regions</h1>
+    <main id="content">
+        
+
+    </main>
+   
+    <footer>
+        <div id="infoSection">
+            <div id="contactInfoDiv">
+                <h3>Contact Information</h3>
+                <p id="companyAddress">67675 placeholderStreet, Preston Idaho 83263</p>
+                <p>(555) 555-5555</p>
+                <p>placeholder@email.com</p>
+                <div id="socialMediaImages">
+                    <a href="https://www.instagram.com"><img loading='lazy' src="images/instagram_50x50.png" alt="Instagram Logo"></a>
+                    <a href="https://www.twitter.com"><img loading='lazy' src="images/twitter_50x50.png" alt="Twitter Logo"></a>
+                    <a href="https://www.facebook.com"><img loading='lazy' src="images/facebook_50x50.png" alt="Facebook Logo"></a>
+                </div>
+            </div>
+           
+            <picture>
+                <source media="(min-width:700px)" srcset="../home-page/images/preston-map_490x251.jpg">
+                <source media="(min-width:580px)" srcset="../home-page/images/preston-map_340x174.jpg">
+                <img id="preston-map" src="../home-page/images/preston-map_282x144.jpg" alt="map of preston" loading="lazy">
+            </picture>
+            
+        </div>
+        <div id="footerBar">
+            <p>
+                &copy; <span id='inputCurrentYear'></span> | Stephen Wang | Texas | <a href="https://www.byui.edu/online">BYUI</a> | 
+                <span id="inputCurrentDate"></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

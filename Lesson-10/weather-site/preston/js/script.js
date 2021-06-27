@@ -23,7 +23,7 @@ fetch(apiURL)
     document.querySelector("#windSpeed").textContent = jsObject.list[0].wind.speed + "mph";
 
     for (let day = 0; day < 5; day++){
-        document.querySelector("#forecastImagesDiv").children[day].firstChild.innerHTML = jsObject.list[day].main.temp + "&#176;F";
+        document.querySelector("#forecastImagesDiv").children[day].firstChild.innerHTML = Math.round(jsObject.list[day].main.temp) + "&#176;F";
     }
 
 

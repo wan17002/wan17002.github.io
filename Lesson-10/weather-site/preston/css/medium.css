@@ -147,11 +147,28 @@
         height: 95%;
     }
     #forecastImagesDiv img{
-        margin: 0px;
         padding-top: 0px;
     }
     #forecastSection:nth-child(odd){
         display: block;
         margin: 0 auto;
+    }
+    #forecastImagesDiv{
+        text-align: center;
+        display: flex; 
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    #forecastImagesDiv span{
+        display: block;
+    }
+    #forecastImagesDiv{
+        display: flex;
+        overflow:scroll; 
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    #forecastSection h2::after{
+        content: "";
     }
 }

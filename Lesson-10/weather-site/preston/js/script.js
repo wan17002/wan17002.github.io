@@ -1,22 +1,24 @@
 window.addEventListener('load', () =>{
     const hambutton = document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');
-    
+    const forecastHam = document.querySelector('#forecastHam');
+    const forecastImagesDiv = document.querySelector('#forecastImagesDiv');
     findTime();
     
     hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
     window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+    forecastHam.addEventListener('click', () => {forecastImagesDiv.classList.toggle('responsive')}, false);
+    window.onresize = () => {if (window.innerWidth > 760) forecastImagesDiv.classList.remove('responsive')};
 });
 //Wednesday 24, July 2020
-
-
 
 function findTime(){
     const currentYear = new Date().getFullYear();
     const currentDay = new Date().getDate();
-    const currentWeekDay = new Date().getDay();
-    let currentDayofWeek = findCurrentDayofWeek(currentWeekDay);
+    const currentDayofWeekNum = new Date().getDay();
+    let currentDayofWeek = findCurrentDayofWeek(currentDayofWeekNum);
     let currentMonth = findCurrentDayofMonth();
+    
 
     let myElement = document.querySelector("#announcementBar");
     
@@ -31,7 +33,8 @@ function findTime(){
 }
 
 function findCurrentDayofWeek(currentDayofWeekNum){
-    let currentDayofWeek;
+    
+    let currentDayofWeek = "";
     switch(currentDayofWeekNum){
         case 0:
             currentDayofWeek = "Sunday";

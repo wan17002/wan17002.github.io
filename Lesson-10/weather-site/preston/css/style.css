@@ -237,8 +237,16 @@ picture{
     margin: auto;
 }
 
-#forecastImagesDiv p{
+#forecastImagesDiv{
     text-align: center;
+}
+#forecastImagesDiv span{
+    border: 1px solid black;
+    box-shadow: 7px 5px 15px -7px #000000;
+    width: fit-content;
+    height: 100%;
+}
+#forecastImagesDiv p{
     margin: 0px;
     vertical-align: bottom;
 }

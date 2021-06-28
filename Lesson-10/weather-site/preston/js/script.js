@@ -9,31 +9,13 @@ window.addEventListener('load', () =>{
 });
 //Wednesday 24, July 2020
 
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=420789f3ef80300ac1d6280bc39de5ca&units=imperial";
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-
-    let currentWeather;
-
-    document.querySelector("#weatherCondition").textContent = jsObject.list[0].weather[0].main;
-    document.querySelector("#temperature").textContent = Math.round(jsObject.list[0].main.temp_max) + "F";
-    document.querySelector("#humidity").textContent = jsObject.list[0].main.humidity + "%";
-    document.querySelector("#windSpeed").textContent = jsObject.list[0].wind.speed + "mph";
-
-    for (let day = 0; day < 5; day++){
-        document.querySelector("#forecastImagesDiv").children[day].firstChild.innerHTML = Math.round(jsObject.list[day].main.temp) + "&#176;F";
-    }
-
-
-      });
 
 
 function findTime(){
     const currentYear = new Date().getFullYear();
     const currentDay = new Date().getDate();
-    let currentDayofWeek = findCurrentDayofWeek();
+    const currentWeekDay = new Date().getDay();
+    let currentDayofWeek = findCurrentDayofWeek(currentWeekDay);
     let currentMonth = findCurrentDayofMonth();
 
     let myElement = document.querySelector("#announcementBar");
@@ -48,9 +30,8 @@ function findTime(){
     document.getElementById('inputCurrentDate').innerHTML = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
 }
 
-function findCurrentDayofWeek(){
-    let currentDayofWeekNum = new Date().getDay();
-    let currentDayofWeek = "";
+function findCurrentDayofWeek(currentDayofWeekNum){
+    let currentDayofWeek;
     switch(currentDayofWeekNum){
         case 0:
             currentDayofWeek = "Sunday";

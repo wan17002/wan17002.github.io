@@ -153,18 +153,14 @@
         display: block;
         margin: 0 auto;
     }
-    #forecastImagesDiv{
-        text-align: center;
-        display: flex; 
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
+
     #forecastImagesDiv span{
         display: block;
     }
     #forecastImagesDiv{
+        text-align: center;
         display: flex;
-        overflow:scroll; 
+        overflow:auto; 
         justify-content: space-between;
         margin-bottom: 20px;
     }

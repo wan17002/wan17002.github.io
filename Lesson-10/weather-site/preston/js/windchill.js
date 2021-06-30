@@ -8,6 +8,7 @@ fetch(apiURL)
     let currentWeather;
     const currentWeekDay = new Date().getDay();
     let currentDay;
+    let resetDay = 0;
     document.querySelector("#weatherCondition").textContent = jsObject.list[0].weather[0].main;
     document.querySelector("#temperature").textContent = Math.round(jsObject.list[0].main.temp_max) + "F";
     document.querySelector("#humidity").textContent = jsObject.list[0].main.humidity + "%";
@@ -17,7 +18,8 @@ fetch(apiURL)
         if (currentWeekDay + day <= 6){
             currentDay = findCurrentDayofWeek(currentWeekDay + day);
         }else{
-            currentDay = findCurrentDayofWeek(day);
+            currentDay = findCurrentDayofWeek(resetDay);
+            resetDay += 1;
         }
         document.querySelector("#forecastImagesDiv").children[day].firstChild.textContent = currentDay;
         document.querySelector("#forecastImagesDiv").children[day].children[1].innerHTML = Math.round(filteredList[day].main.temp) + "&#176;F";

@@ -252,9 +252,10 @@ picture{
 
 #forecastImagesDiv span{
     padding: 0px 30px;
-    border: 1px dashed #FFAF54;
+    border: 2px dashed #FFAF54;
     color: black;
     background-color: #87CEEB;
+    min-width: 80px;
 }
 
 #forecastImagesDiv p{

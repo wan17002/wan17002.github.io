@@ -9,6 +9,9 @@ h1{
     font-family: "DM Serif Display", serif;
     
 }
+body{
+    font-family: "Open Sans", sans-serif;
+}
 main h1{
     color:#083D77;
 }
@@ -192,7 +195,7 @@ fieldset{
 fieldset label, form legend{
     font-weight: bold;
 }
-input{
+input, select{
     margin: 10px;
 }
 #radioDiv input{
@@ -262,4 +265,21 @@ legend{
 }
 picture{
     margin: auto;
+}
+
+label{
+    text-align: center;
+}
+input{
+    outline: none;
+}
+select, option{
+    outline: none;
+}
+#formSeverity{
+    vertical-align:middle;
+}
+
+h3{
+    margin-bottom: 10px;
 }

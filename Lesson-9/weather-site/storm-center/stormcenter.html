@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
     <link href="css/large.css" rel="stylesheet">
-    <script src="../home-page/js/script.js"></script>
+    <script src="js/script.js"></script>
 
     
 </head>
@@ -52,7 +52,7 @@
 
             <!---------------------------- USER INFORMATION SECTION------------------------------------->
             <fieldset id="userInfo">
-                <legend><h3>User Information</h3></legend>
+                <legend><h2>User Information</h2></legend>
                 <div id="userInfoDiv">
                 <label>*Name:
                     <input type="text" id="formFullName" name="fullName" placeholder="John Doe" required pattern="^[A-Za-z]{3,}$">
@@ -74,7 +74,7 @@
 
             <!--------------------------- STORM INFORMATION SECTION ----------------------------------->
             <fieldset id="stormInfo">
-                <legend><h3>Storm Information</h3></legend>
+                <legend><h2>Storm Information</h2></legend>
                 <label>Storm Type
                     <input list="stormTypes" id="formStormType" name="stormType" placeholder="Storm Type">
                 </label>
@@ -86,11 +86,14 @@
                     <option name="tornado" value="Tornado"></option>
                 </datalist>
                 <br>
-                <label>Severity
+                <label>
+                    <span>Severity</span>
+
                     <input type="range" name="severity" id="formSeverity" min="1" max="10" step="1" list="ticks" 
-                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
                 </label>
-                <span id="ratingvalue">5</span>
+
                 <datalist id="tickmarks">
                     <option value="0">
                     <option value="1">
@@ -116,7 +119,7 @@
             </fieldset>
             <!-------------------------- USER IN DANGER? SECTION -------------------------->
             <fieldset id="additionalInfo">
-                <legend><h3>Additional Information</h3></legend>
+                <legend><h2>Additional Information</h2></legend>
                 <div id="radioDiv">
                     <label>User in Danger? <em>(Choose one)</em></label>
                     <label><input type="radio" name="danger"checked>Yes</label>
@@ -124,7 +127,8 @@
                     <label><input type="radio" name="danger">No</label>
                 </div>
                 </label>
-                <label id="userTextArea">Additional Comments?<br><textarea name="comments" placeholder="Enter text here..."></textarea></label>
+                <hr>
+                <label id="userTextArea"><h3>Additional Comments?</h3><textarea name="comments" placeholder="Enter text here..."></textarea></label>
             </fieldset>
 
                 

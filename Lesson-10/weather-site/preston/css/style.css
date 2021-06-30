@@ -234,7 +234,8 @@ picture{
 
 #forecastImagesDiv.responsive{
     text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     overflow:scroll; 
     justify-content: space-between;
     margin-bottom: 20px;

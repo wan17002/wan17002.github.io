@@ -7,14 +7,18 @@ fetch(apiURL)
     console.log(filteredList);
     let currentWeather;
     const currentWeekDay = new Date().getDay();
-
+    let currentDay;
     document.querySelector("#weatherCondition").textContent = jsObject.list[0].weather[0].main;
     document.querySelector("#temperature").textContent = Math.round(jsObject.list[0].main.temp_max) + "F";
     document.querySelector("#humidity").textContent = jsObject.list[0].main.humidity + "%";
     document.querySelector("#windSpeed").textContent = Math.round(jsObject.list[0].wind.speed) + "mph";
     let iconURL = "http://openweathermap.org/img/wn/";
     for (let day = 0; day < filteredList.length; day++){
-        let currentDay = findCurrentDayofWeek(currentWeekDay + day);
+        if (currentWeekDay + day <= 6){
+            currentDay = findCurrentDayofWeek(currentWeekDay + day);
+        }else{
+            currentDay = findCurrentDayofWeek(day);
+        }
         document.querySelector("#forecastImagesDiv").children[day].firstChild.textContent = currentDay;
         document.querySelector("#forecastImagesDiv").children[day].children[1].innerHTML = Math.round(filteredList[day].main.temp) + "&#176;F";
         document.querySelector("#forecastImagesDiv").children[day].children[2].setAttribute('src', iconURL + filteredList[day].weather[0].icon + ".png");

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+    
+</head>
+<body>
+    <header>
+        <!-------------------------------------Announcement Div---------------------------------------------------------------------->
+        <div id="announcementBar">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+            <hr>
+        </div>
+        <!-------------------------------------Logo Bar---------------------------------------------------------------------->
+        <div id="siteNameDiv">
+            <img loading='lazy' src="images/weather-icon-small.png" alt="weatherNearMe logo">
+            <div id="siteNameSpan">
+                <h1>Weather Near Me</h1>
+                <p>What's the Weather?!</p>
+                
+            </div>
+            <span id="menuSpan"><a class="ham" href="#">&#9776;</a></span>
+        </div>
+         <!-------------------------------------Navigation Bar---------------------------------------------------------------------->
+        <nav>
+            <ul id="navigation">
+                
+                <li><a href="../home-page/index.html">Home</a></li>
+                <li><a href="../preston/preston-10.html">Preston</a></li>
+                <li><a href="../soda-springs/soda-springs.html">Soda Springs</a></li>
+                <li><a href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a class="active" href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a href="../gallery/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Storm Report</h1>
+        <form action="thanks.html">
+
+            <!---------------------------- USER INFORMATION SECTION------------------------------------->
+            <fieldset id="userInfo">
+                <legend><h2>User Information</h2></legend>
+                <div id="userInfoDiv">
+                <label>*Name:
+                    <input type="text" id="formFullName" name="fullName" placeholder="John Doe" required pattern="^[A-Za-z]{3,}$">
+                </label>
+                <label>Email:
+                    <input type="email" id="formEmail" name="email" placeholder="xyz@email.com">
+                </label>
+                <label>*Number:
+                    <input type="tel" id="formPhone" name="phoneNumber" placeholder="###-###-####" required>
+                </label>
+                <label>*Zip Code:
+                    <input type="number" id="formZip" name="zipCode" pattern="(\d{5}([\-]\d{4})?)" placeholder="#####" required>
+                </label>
+                <label id="dateLabel">Date:
+                    <input type="date" name="date" id="formDate">
+                </label>
+            </div>
+            </fieldset>
+
+            <!--------------------------- STORM INFORMATION SECTION ----------------------------------->
+            <fieldset id="stormInfo">
+                <legend><h2>Storm Information</h2></legend>
+                <label>Storm Type
+                    <input list="stormTypes" id="formStormType" name="stormType" placeholder="Storm Type">
+                </label>
+                <datalist id="stormTypes" name="stormList">
+                    <option name="flashFlood" value="Flash Flood"></option>
+                    <option name="hail" value="Hail"></option>
+                    <option name="hurricane" value="Hurricane"></option>
+                    <option name="thunderStorm" value="Thunderstorm"></option>
+                    <option name="tornado" value="Tornado"></option>
+                </datalist>
+                <br>
+                <label>
+                    <span>Severity</span>
+
+                    <input type="range" name="severity" id="formSeverity" min="1" max="10" step="1" list="ticks" 
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                </label>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <br>
+                <label>Region
+                    <select name="stormRegion" id="formStormRegion" name="stormRegion" onchange="selectResponse()">
+                        <option value="" disabled selected>Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <!-------------------------- USER IN DANGER? SECTION -------------------------->
+            <fieldset id="additionalInfo">
+                <legend><h2>Additional Information</h2></legend>
+                <div id="radioDiv">
+                    <label>User in Danger? <em>(Choose one)</em></label>
+                    <label><input type="radio" name="danger"checked>Yes</label>
+                    <label><input type="radio" name="danger">Maybe</label>
+                    <label><input type="radio" name="danger">No</label>
+                </div>
+                </label>
+                <hr>
+                <label id="userTextArea"><h3>Additional Comments?</h3><textarea name="comments" placeholder="Enter text here..."></textarea></label>
+            </fieldset>
+
+                
+            <button type="submit" name="submit" id="submitButton">Submit</button>
+        </form>
+        
+    </main>
+   
+    <footer>
+           <!-------------------------------------Contact Information for Footer---------------------------------------------------------------------->
+           <section id="infoSection">
+            <div id="contactInfoDiv">
+                <h3>Contact Information</h3>
+                <p id="companyAddress">67675 placeholderStreet, Preston Idaho 83263</p>
+                <p>(555) 555-5555</p>
+                <p>placeholder@email.com</p>
+                <div id="socialMediaImages">
+                    <a href="https://www.instagram.com"><img loading='lazy' src="../home-page/images/instagram_50x50.png" alt="Instagram Logo"></a>
+                    <a href="https://www.twitter.com"><img loading='lazy' src="../home-page/images/twitter_50x50.png" alt="Twitter Logo"></a>
+                    <a href="https://www.facebook.com"><img loading='lazy' src="../home-page/images/facebook_50x50.png" alt="Facebook Logo"></a>
+                </div>
+            </div>
+           
+            <!--<img src="images/preston-map.JPG" alt="map of preston">-->
+            <picture>
+                <source media="(min-width:700px)" srcset="../home-page/images/preston-map_490x251.jpg" alt="map of preston">
+                <source media="(min-width:580px)" srcset="../home-page/images/preston-map_340x174.jpg" alt="map of preston">
+                <img id="preston-map" src="../home-page/images/preston-map_282x144.jpg" alt="map of preston" loading="lazy">
+            </picture>
+            
+        </section>
+         <!-------------------------------------Footer Bar---------------------------------------------------------------------->
+        <section id="footerBar">
+            <p>
+                &copy; <span id='inputCurrentYear'></span> | Stephen Wang | Texas | <a href="https://www.byui.edu/online">BYUI</a> | 
+                <span id="inputCurrentDate"></span>
+            </p>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['DM Serif Display', 'Open Sans']
+         }
+        });
+    </script>
+</body>
+</html>

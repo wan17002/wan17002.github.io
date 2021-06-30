@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Haven</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="/css/normalize.css" rel="stylesheet">
+    <script src="js/windchill.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    
+
+    
+    
+</head>
+<body>
+    <header>
+         <!-------------------------------------Announcement Div---------------------------------------------------------------------->
+        <div id="announcementBar">
+            <h2>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2>
+            <hr>
+        </div>
+        
+        <!-------------------------------------Logo Bar---------------------------------------------------------------------->
+        <div id="siteNameDiv">
+            <img src="images/weather-icon-small.png" alt="weatherNearMe logo">
+            <div id="siteNameSpan">
+                <h1>Weather Near Me</h1>
+                <p>What's the Weather?!</p>
+                
+            </div>
+            <span id="menuSpan"><a class="ham" href="#">&#9776;</a></span>
+        </div>
+         <!-------------------------------------Navigation Bar---------------------------------------------------------------------->
+        <nav>
+            <ul id="navigation">
+                
+                <li><a href="../home-page/index.html">Home</a></li>
+                <li><a href="../preston/preston-10.html">Preston</a></li>
+                <li><a href="../soda-springs/soda-springs.html">Soda Springs</a></li>
+                <li><a class="active"href="../fish-haven/fish-haven.html">Fish Haven</a></li>
+                <li><a href="../storm-center/stormcenter.html">Storm Center</a></li>
+                <li><a  href="../gallery/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-------------------------------------Weather Summary---------------------------------------------------------------------->
+    <main>
+        <h2 class="zeroMargin">Soda Springs</h2>
+        <section id="summarySection">
+            <img id="siteBanner" src="images/sky_900x275.jpg" alt="picture of the sky">
+            
+            <div id="weatherSummaryDiv">    
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="weatherCondition">Rainy</span></p>
+                <p>High: <span id="temperature">50</span><span>&#176;</span></p>
+                <p>Wind Chill: <span id="windChill"></span><span id="tempSymbol"></span></p>
+                <p>Humidity: <span id="humidity">95</span></p>
+                <p>Wind Speed: <span id="windSpeed">12</span></p>
+            </div>
+        </section>
+         <!-------------------------------------Five Day Forecast---------------------------------------------------------------------->
+        <section id="forecastSection">
+            <h2 id="forecastHam">Five Day Forecast</h2>
+            <div id ="forecastImagesDiv">
+                <span><h3></h3><p></p><img loading='lazy'></span>
+                <span><h3></h3><p></p><img loading='lazy'></span>
+                <span><h3></h3><p></p><img loading='lazy'></span>
+                <span><h3></h3><p></p><img loading='lazy'></span>
+                <span><h3></h3><p></p><img loading='lazy'></span>
+            </div>
+        </section>
+         <!-------------------------------------Articles---------------------------------------------------------------------->
+        <section id="articleSection">
+            <h3>Balloons</h3>
+            <div>
+                <img src="images/dock.jpg" alt="person at the dock" loading="lazy">
+                
+                <p>Balloons are pretty and come in different colors, different shapes, different sizes, and they can even adjust sizes as needed. But don't make them too big or they might just pop, and then bye-bye balloon. It'll be gone and lost for the rest of mankind. They can serve a variety of purposes, from decorating to water balloon wars. You just have to use your head to think a little bit about what to do with them.</p>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+         <!-------------------------------------Contact Information for Footer---------------------------------------------------------------------->
+        <section id="infoSection">
+            <div id="contactInfoDiv">
+                <h3>Contact Information</h3>
+                <p id="companyAddress">67675 Cross Street Ln, Preston Idaho 83263</p>
+                <p>(565) 521-5785</p>
+                <p>weatherNearMe@gmail.com</p>
+                <div id="socialMediaImages">
+                    <a href="https://www.instagram.com"><img loading='lazy' src="../home-page/images/instagram_50x50.png" alt="Instagram Logo"></a>
+                    <a href="https://www.twitter.com"><img loading='lazy' src="../home-page/images/twitter_50x50.png" alt="Twitter Logo"></a>
+                    <a href="https://www.facebook.com"><img loading='lazy' src="../home-page/images/facebook_50x50.png" alt="Facebook Logo"></a>
+                </div>
+            </div>
+           
+            <!--<img src="images/preston-map.JPG" alt="map of preston">-->
+            <picture>
+                <source media="(min-width:700px)" srcset="../home-page/images/preston-map_490x251.jpg" alt="map of preston">
+                <source media="(min-width:580px)" srcset="../home-page/images/preston-map_340x174.jpg" alt="map of preston">
+                <img id="preston-map" src="../home-page/images/preston-map_282x144.jpg" alt="map of preston" loading="lazy">
+            </picture>
+            
+        </section>
+         <!-------------------------------------Footer Bar---------------------------------------------------------------------->
+        <section id="footerBar">
+            <p>
+                &copy; <span id='inputCurrentYear'></span> | Stephen Wang | Texas | <a href="https://www.byui.edu/online">BYUI</a> | 
+                <span id="inputCurrentDate"></span>
+            </p>
+        </section>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['DM Serif Display', 'Open Sans']
+         }
+        });
+    </script>
+</body>
+</html>

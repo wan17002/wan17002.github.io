@@ -237,8 +237,16 @@ input{
 
 }
 
+input{
+    padding: 5px;
+    border-radius: 10px;
+}
+legend{
+    padding: 0px 5px 5px 5px;
+}
 
 #submitButton{
+    border-radius: 10px;
     color: black;
     font-weight: bold;
     background-color: #FFAF54;

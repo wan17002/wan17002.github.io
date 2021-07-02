@@ -84,10 +84,9 @@
     #articleSection div img{
         width:unset;
         grid-row: 1;
-        min-width: 20em;
-        max-height: 150px;
-        margin: 15px auto;
         float: right;
+        margin: 15px;
+        width: 300px;
         
     }
     #articleSection div p{

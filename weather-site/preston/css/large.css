@@ -12,5 +12,7 @@
         overflow:none;
         grid-gap: 5px;
     }
-
+    #infoSection{
+        width:61.4rem;
+    }
 }

@@ -151,7 +151,6 @@ main h2{
 #articleSection{
     border: #FFAF54 solid 2px;
     padding: 10px;
-    font-size: 1.2rem;
 }
 #articleSection div{
     display: grid;
@@ -160,6 +159,12 @@ main h2{
 #articleSection img{
     width: 100%;
     grid-row: 3;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow:5px 5px 15px -1px #000000;
+    margin: 0 auto;
+    width: 350px;
 }
 #articleSection div p{
     grid-row: 1;

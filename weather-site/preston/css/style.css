@@ -165,8 +165,14 @@ main h2{
 
 }
 #articleSection img{
-    margin: 0px;
-
+    width: 100%;
+    grid-row: 3;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow:5px 5px 15px -1px #000000;
+    margin: 0 auto;
+    width: 350px;
 }
 #articleSection div p{
     grid-row: 1;

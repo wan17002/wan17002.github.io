@@ -234,3 +234,14 @@ li{
     margin: 15px;
     font-size: 1px;
 }
+#articleDiv{
+    margin: 0 auto;
+    width: 800px;
+    border: 2px dashed orange;
+    padding: 15px;
+}
+
+#articleDiv i{
+    margin: 0 auto;
+    text-align: center;
+}

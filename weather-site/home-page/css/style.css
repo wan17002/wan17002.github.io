@@ -236,9 +236,10 @@ li{
 }
 #articleDiv{
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
     border: 2px dashed orange;
     padding: 15px;
+    text-align: center;
 }
 
 #articleDiv i{

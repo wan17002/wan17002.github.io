@@ -208,7 +208,7 @@ hr{
     margin-top: 40px;
 }
 .eventDiv img{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 5px;
     box-shadow:5px 5px 15px 5px #000000;
     margin: 5px;
@@ -244,5 +244,8 @@ li{
 
 #articleDiv i{
     margin: 0 auto;
+    text-align: center;
+}
+#articleDiv h2{
     text-align: center;
 }

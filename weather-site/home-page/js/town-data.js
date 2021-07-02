@@ -33,6 +33,9 @@ function newTown(){
                 let rainFall = document.createElement('p');
                 let townPhoto = document.createElement('img');
                 let textDiv = document.createElement('div');
+                let eventDiv = document.createElement('div');
+                let eventTitle = document.createElement('p');
+                let headRest = document.createElement('hr');
                 document.querySelector('main').appendChild(card);
 
                 h2.textContent = new_town[i].name;
@@ -41,6 +44,9 @@ function newTown(){
                 currentPopulation.textContent = "Population: " + new_town[i].currentPopulation;
                 rainFall.textContent = "Annual Rain Fall: " + new_town[i].averageRainfall;
                 
+                eventDiv.setAttribute('class', 'eventDiv');
+
+
                 switch(new_town[i].name){
                     case "Soda Springs":
                         townPhoto.setAttribute('src', 'images/soda-springs_250x166.jpg');
@@ -55,15 +61,28 @@ function newTown(){
                         townPhoto.setAttribute('alt', new_town[i].name);
                         break;
                 }
+                headRest.setAttribute('class', "headRest");
+
                 textDiv.appendChild(h2);
                 textDiv.appendChild(italics);
                 textDiv.appendChild(yearFounded);
                 textDiv.appendChild(currentPopulation);
                 textDiv.appendChild(rainFall);
                 card.appendChild(textDiv);
-                card.appendChild(townPhoto);
+                card.appendChild(headRest);
+                card.appendChild(eventDiv);
+                eventDiv.appendChild(townPhoto);
+                eventTitle.textContent = "Upcoming Events!";
+                eventTitle.setAttribute('class', 'eventTitle');
+                eventDiv.appendChild(eventTitle);
 
-
+                for(let m = 0; m < new_town[i].events.length;m++){
+                    let townEvent = document.createElement('p');
+                    townEvent.textContent = new_town[i].events[m];
+                    townEvent.setAttribute('class', 'townEvent');
+                    eventDiv.appendChild(townEvent);
+                    console.log(townEvent);
+                }
                 
             }
             

@@ -118,7 +118,37 @@
         height: auto;
         margin: 15px;
     }
+    .eventDiv img{
+
+        animation-duration: 5s linear;
+        transition-duration: .5s;
+    }
     
-    
+
+    .townEvent{
+        opacity: 0;
+        transition-duration: .5s;
+        padding: 1px;
+    }
+    .eventTitle{
+        opacity: 0;
+        transition-duration: .5s;
+    }
+
+    .eventDiv:hover .townEvent{
+        transform: translate(0px, -200px);
+        opacity: 1;
+    }
+    .eventDiv:hover .eventTitle{
+        transform: translate(0px, -205px);
+        opacity: 1;
+    }
+    #content section img:hover, .eventDiv:hover img{
+        transform: translate(-200%, 0%);
+        opacity: 0;
+    }
+    #content section{
+        height: 260px;
+    }
     
 }

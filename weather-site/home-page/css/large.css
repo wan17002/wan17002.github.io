@@ -32,4 +32,19 @@
     #content section img{
         width: 220px;
     }
+    #content section{
+        height: 500px;
+    }
+    .eventDiv:hover .townEvent{
+        transform: translate(0px, -90px);
+        opacity: 1;
+    }
+    .eventDiv:hover .eventTitle{
+        transform: translate(0px, -90px);
+        opacity: 1;
+    }
+    #content section img:hover, .eventDiv:hover img{
+        transform: translate(0px, -200px);
+        opacity: 0;
+    }
 }

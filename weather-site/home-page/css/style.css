@@ -201,20 +201,36 @@ hr{
     text-align: center;
     font-size: 1.5rem;
 }
-#content section img{
-    background-color: white;
-    margin-bottom: 15px;
-    padding: 5px;
-    box-shadow:5px 5px 15px 5px #000000;
-    
-}
-#content section img:hover{
-    transform: scale(1.05);
-
-}
 
 #bigText{
     color:#083D77;
     text-decoration: underline;
     margin-top: 40px;
+}
+.eventDiv img{
+    background-color: white;
+    padding: 5px;
+    box-shadow:5px 5px 15px 5px #000000;
+    margin: 5px;
+}
+.eventTitle{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 1px solid black;   
+}
+ul{
+    white-space:normal;
+}
+li{
+    padding: 1px;
+    text-align: left;
+    margin: 0 auto;
+    line-height:auto;
+    font-size: initial;
+}
+.headRest{
+    background-color: white;
+    margin: 15px;
+    font-size: 1px;
 }

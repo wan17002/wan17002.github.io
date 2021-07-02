@@ -10,6 +10,7 @@ h1{
 }
 main h1{
     color:#083D77;
+    text-decoration: underline;
 }
 
 h2, h3, h4{

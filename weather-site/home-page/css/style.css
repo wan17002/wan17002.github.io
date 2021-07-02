@@ -1,7 +1,7 @@
 /* Small/Phone View ***************/
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&display=swap');
 body{
-    
+    font-family: 'Open Sans', sans-serif;
 }
 .zeroMargin{
     margin: 10px;
@@ -211,4 +211,10 @@ hr{
 #content section img:hover{
     transform: scale(1.05);
 
+}
+
+#bigText{
+    color:#083D77;
+    text-decoration: underline;
+    margin-top: 40px;
 }

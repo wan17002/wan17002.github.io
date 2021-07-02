@@ -165,6 +165,10 @@ main h2{
     grid-row: 1;
 
 }
+#articleSection h2{
+    text-decoration: none;
+    border-bottom: 1px dashed black;
+}
 
 footer{
     padding: 0;
@@ -278,4 +282,8 @@ picture{
 #forecastImagesDiv h3{
     border-bottom: 1px solid black;
     
+}
+#bigText{
+    color:#083D77;
+    text-decoration: underline;
 }

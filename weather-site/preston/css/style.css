@@ -8,6 +8,7 @@ h1{
     text-align: center;
     font-family: "DM Serif Display", serif;
 }
+
 h2{
     text-align: center;
     text-decoration: underline;
@@ -151,20 +152,27 @@ main h2{
 #articleSection{
     border: #FFAF54 solid 2px;
     padding: 10px;
-    font-size: 1.2rem;
 }
+#articleSection h2{
+    text-decoration: none;
+    
+}
+
 #articleSection div{
     display: grid;
     grid-template-rows: auto;
+    vertical-align: center;
+
 }
 #articleSection img{
-    width: 100%;
-    grid-row: 3;
+    margin: 0px;
+
 }
 #articleSection div p{
     grid-row: 1;
-
+    margin: 0px;
 }
+
 
 footer{
     padding: 0;
@@ -277,4 +285,9 @@ picture{
 #forecastImagesDiv h3{
     border-bottom: 1px solid black;
     
+}
+
+#bigText{
+    color:#083D77;
+    text-decoration: underline;
 }

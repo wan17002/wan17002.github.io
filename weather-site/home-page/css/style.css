@@ -223,16 +223,7 @@ hr{
     font-size: 20px;
     padding: 1px solid black;   
 }
-ul{
-    white-space:normal;
-}
-li{
-    padding: 1px;
-    text-align: left;
-    margin: 0 auto;
-    line-height:auto;
-    font-size: initial;
-}
+
 .headRest{
     background-color: white;
     margin: 15px;

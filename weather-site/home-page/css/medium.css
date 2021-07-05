@@ -113,9 +113,7 @@
         font-size: 1rem;
     }
     #content section img{
-        margin: auto;
-        max-width: 100%;
-        height: auto;
+
         margin: 15px;
     }
     .eventDiv img{
@@ -123,8 +121,6 @@
         animation-duration: 5s linear;
         transition-duration: .5s;
     }
-    
-
     .townEvent{
         opacity: 0;
         transition-duration: .5s;
@@ -150,5 +146,8 @@
     #content section{
         height: 260px;
     }
-    
+    body{
+        font-size: initial;
+        text-align: center;
+    }
 }

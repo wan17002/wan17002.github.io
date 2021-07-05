@@ -130,14 +130,18 @@ main h2{
     text-align: left;
 }
 
+#summarySection{
+    border: 2px solid #FFAF54;
+    padding: 5px;
+}
 #summarySection img{
     width: 100%;
 }
 
 #weatherSummaryDiv{
     margin: 15px;
+    border: 1px dashed #083D77;
     padding: 10px;
-    border: #FFAF54 solid 2px;
     background-color: white;
     text-align: center;
 }
@@ -155,13 +159,15 @@ main h2{
 #articleSection div{
     display: unset;
     grid-template-rows: auto;
+    justify-content: center;
+    vertical-align: middle;
 }
 #articleSection img{
     grid-row: 3;
-    height: 325px;
+    max-width: 50%;
     padding: 5px;
     float: right;
-    padding: 10px;
+    padding: 5px;
     margin: 15px;
     border: 1px solid black;
     box-shadow:5px 5px 15px -1px #000000;
@@ -186,13 +192,11 @@ footer{
     background-color: #083D77;
     padding: 10px;
     max-width: 100%;
+    justify-content: center;
 }
 
 #contactInfoDiv{
-    padding: 10px;
     margin: 0;
-    width: 10em;
-    width: auto;
     max-width: 100%;
 }
 #socialMediaImages img{
@@ -237,9 +241,6 @@ hr{
     padding: 0;
 }
 
-picture{
-    margin: auto;
-}
 
 #forecastImagesDiv.responsive{
     text-align: center;
@@ -291,4 +292,16 @@ picture{
 #bigText{
     color:#083D77;
     text-decoration: underline;
+}
+body{
+    font-size: 5vw;
+}
+.ham{
+    text-decoration: none;
+}
+#articleSection img{
+    transition-duration: .2s;
+}
+#articleSection img:hover{
+    transform:scale(1.05);
 }

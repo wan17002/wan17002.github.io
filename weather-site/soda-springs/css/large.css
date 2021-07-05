@@ -15,5 +15,8 @@
     #infoSection{
         width:61.4rem;
     }
+    #articleSection div img{
+        width: 200px;
+    }
 
 }

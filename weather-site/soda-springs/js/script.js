@@ -3,7 +3,6 @@ window.addEventListener('load', () =>{
     const mainnav = document.querySelector('#navigation');
     const forecastHam = document.querySelector('#forecastHam');
     const forecastImagesDiv = document.querySelector('#forecastImagesDiv');
-    findTime();
     
     hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
     window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
@@ -12,25 +11,22 @@ window.addEventListener('load', () =>{
 });
 //Wednesday 24, July 2020
 
-function findTime(){
-    const currentYear = new Date().getFullYear();
-    const currentDay = new Date().getDate();
+window.addEventListener('load', () =>{
+
+    let d = new Date();
+    const currentYear = d.getFullYear();
+    console.log(currentYear);
+    const currentDay = d.getDate();
     const currentDayofWeekNum = new Date().getDay();
     let currentDayofWeek = findCurrentDayofWeek(currentDayofWeekNum);
     let currentMonth = findCurrentDayofMonth();
     
-
-    let myElement = document.querySelector("#announcementBar");
-    
-    if (currentDayofWeek == "Friday"){
-        myElement.style.display = "block";
-    }else{
-        myElement.style.display = "none";
-    }
     
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
     document.getElementById('inputCurrentDate').innerHTML = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;
-}
+    console.log(currentMonth);
+
+});
 
 function findCurrentDayofWeek(currentDayofWeekNum){
     

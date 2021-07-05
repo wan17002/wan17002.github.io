@@ -1,6 +1,5 @@
 /* Small/Phone View ***************/
 
-
 .zeroMargin{
     margin: 10px;
 }
@@ -131,14 +130,18 @@ main h2{
     text-align: left;
 }
 
+#summarySection{
+    border: 2px solid #FFAF54;
+    padding: 5px;
+}
 #summarySection img{
     width: 100%;
 }
 
 #weatherSummaryDiv{
     margin: 15px;
+    border: 1px dashed #083D77;
     padding: 10px;
-    border: #FFAF54 solid 2px;
     background-color: white;
     text-align: center;
 }
@@ -162,17 +165,18 @@ main h2{
     display: grid;
     grid-template-rows: auto;
     vertical-align: center;
+    align-content: center;
+    grid-gap: 10px;
+    margin-bottom: 15px;
 
 }
 #articleSection img{
-    width: 100%;
     grid-row: 3;
-    padding: 10px;
-    margin: 5px;
+    padding: 5px;
     border: 1px solid black;
     box-shadow:5px 5px 15px -1px #000000;
     margin: 0 auto;
-    width: 350px;
+    max-width: 80%;
 }
 #articleSection div p{
     grid-row: 1;
@@ -191,21 +195,18 @@ footer{
     background-color: #083D77;
     padding: 10px;
     max-width: 100%;
+    justify-content: center;
 }
 
 #contactInfoDiv{
-    padding: 10px;
     margin: 0;
-    width: 10em;
-    width: auto;
     max-width: 100%;
 }
 #socialMediaImages img{
     display: none;
 }
-#prestonMap{
-    margin: auto;
-}
+
+
 #companyAddress{
     display:none;
 }
@@ -296,4 +297,23 @@ picture{
 #bigText{
     color:#083D77;
     text-decoration: underline;
+}
+
+header .ham{
+    text-decoration: none;
+}
+
+picture{
+    margin: 0 auto;
+    padding: 15px;
+}
+
+body{
+    font-size: 5vw;
+}
+#articleSection img{
+    transition-duration: .2s;
+}
+#articleSection img:hover{
+    transform:scale(1.05);
 }

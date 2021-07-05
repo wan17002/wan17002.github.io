@@ -82,10 +82,10 @@
     #articleSection div{
         display: unset;
     }
-    #articleSection div img{
+    #articleSection img{
         vertical-align: middle;
         float: right;
-        
+        max-width: 200px;      
     }
     #articleSection div p{
         grid-row:2;
@@ -158,5 +158,8 @@
     }
     #forecastSection h2::after{
         content: "";
+    }
+    body{
+        font-size: initial;
     }
 }

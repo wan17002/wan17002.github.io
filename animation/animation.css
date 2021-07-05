@@ -1,0 +1,28 @@
+#container{
+    max-width: 500px;
+    margin: 0px auto;
+    border: 1px solid black;
+    width: fit-content;
+    height: 166px;
+    text-align: center;
+}
+#container, #textContent, #container img{
+    transition-duration: .5s;
+}
+#textContent{
+    opacity: 0;
+    color: white;
+}
+
+#container img{
+    opacity: 1;
+}
+#container:hover img{
+    transform: translate(0px, -180px);
+    opacity: 0;
+}
+#container:hover #textContent{
+    transform: translate(0px, -180px);
+    opacity: 1;
+    color: black;
+}

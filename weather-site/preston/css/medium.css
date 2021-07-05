@@ -161,4 +161,10 @@
     #forecastSection h2::after{
         content: "";
     }
+    body{
+        font-size: initial;
+    }
+    #articleSection img{
+        padding: 5px;
+    }
 }

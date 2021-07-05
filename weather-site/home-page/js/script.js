@@ -15,13 +15,6 @@ function findTime(){
     let currentDayofWeek = findCurrentDayofWeek();
     let currentMonth = findCurrentDayofMonth();
 
-    let myElement = document.querySelector("#announcementBar");
-    
-    if (currentDayofWeek == "Friday"){
-        myElement.style.display = "block";
-    }else{
-        myElement.style.display = "none";
-    }
     
     document.getElementById('inputCurrentYear').innerHTML = currentYear;
     document.getElementById('inputCurrentDate').innerHTML = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;

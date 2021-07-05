@@ -5,13 +5,6 @@ window.addEventListener('load', () =>{
     currentDayofWeek = findCurrentDayofWeek();
     currentMonth = findCurrentDayofMonth();
 
-    let myElement = document.querySelector("#announcementBar");
-    
-    if (currentDayofWeek == "Friday"){
-        myElement.style.display = "block";
-    }else{
-        myElement.style.display = "none";
-    }
     
     
     var currentDate = currentDayofWeek + " " + currentDay + ", " + currentMonth + " " + currentYear;

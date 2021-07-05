@@ -161,4 +161,8 @@
     #forecastSection h2::after{
         content: "";
     }
+
+    body{
+        font-size: initial;
+    }
 }

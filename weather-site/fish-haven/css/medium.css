@@ -52,6 +52,8 @@
         background-image: url("/Lesson-9/weather-site/preston/images/sky_900x275.jpg");
         background-repeat:round;
         padding: 15px;
+        display: flex;
+        position: relative;
     }
     #summarySection img{
         display: none;
@@ -164,6 +166,21 @@
 
     body{
         font-size: initial;
-        min-width: initial;
+    }
+    .card{
+        margin: 15px;
+        border: 1px dashed #083D77;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        position:absolute;
+        right: 0;
+    }
+    .weatherHR{
+        display: block;
+        border: 1px solid #FFAF54;
+    }
+    #summarySection{
+        min-height: min-content;
     }
 }

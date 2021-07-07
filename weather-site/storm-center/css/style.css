@@ -199,13 +199,8 @@ fieldset label, form legend{
 input, select{
     margin: 10px;
 }
-#radioDiv input{
-    margin: 20px;
-}
 
-#thankYou{
-    text-align: center;
-}
+
 #announcementBar{
     background-color:#FFAF54;
      margin: 0;
@@ -290,11 +285,35 @@ h3{
     
 }
 body{
-    font-size: 5vw;
+    font-size: 3.5vw;
+    min-width: fit-content;
 }
 form{
     justify-content: center;
 }
-body{
-    min-width: fit-content;
+.labelContainer{
+    display: block;
+    white-space:nowrap;
+    margin-left: auto;
+}
+
+.labelContainer input, .labelSpan input{
+    margin: 0px;
+}
+#userInfoDiv{
+    gap: 15px;
+}
+.labelSpan{
+    white-space: nowrap;
+    margin: 0px;
+    height: min-content;
+}
+.labelSpan input{
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+#thankYou{
+    text-align: center;
 }

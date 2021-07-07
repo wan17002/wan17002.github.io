@@ -130,7 +130,6 @@ main h2{
     text-align: left;
 }
 #summarySection{
-    border: 2px solid #FFAF54;
     padding: 5px;
 }
 #summarySection img{
@@ -139,7 +138,6 @@ main h2{
 
 #weatherSummaryDiv{
     margin: 15px;
-    border: 1px dashed #083D77;
     padding: 10px;
     background-color: white;
     text-align: center;
@@ -278,10 +276,7 @@ picture{
     margin: 0 auto;
     padding: 0px;
 }
-#weatherSummaryDiv h3{
-    font-weight: bold;
 
-}
 
 #forecastImagesDiv, #forecastImagesDiv span{
     display: none;
@@ -304,7 +299,7 @@ picture{
 }
 
 body{
-    font-size: 5vw;
+    font-size: 3.5vw;
 }
 #articleSection img{
     transition-duration: .2s;
@@ -312,8 +307,23 @@ body{
 #articleSection img:hover{
     transform:scale(1.05);
 }
-body{
-    min-width: fit-content;
-    justify-self: center;
-    margin: 0 auto;
+
+.card{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#footerBar{
+    text-align: center;
+}
+#forecastImagesDiv h3{
+    border-bottom: 1px solid black;
+}
+
+.weatherHR{
+    display: none;
+}
+#summarySection{
+    height: fit-content;
 }

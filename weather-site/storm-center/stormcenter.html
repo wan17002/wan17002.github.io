@@ -52,28 +52,38 @@
             <fieldset id="userInfo">
                 <legend><h2>User Information</h2></legend>
                 <div id="userInfoDiv">
-                <label>*Name:
+                <div class="labelContainer">
+                    <label for="formFullName">*Name:</label>
                     <input type="text" id="formFullName" name="fullName" placeholder="John Doe" required pattern="^[A-Za-z]{3,}$">
-                </label>
-                <label>Email:
+                </div>
+                
+                <div class="labelContainer">
+                    <label for="formEmail">Email:</label></label>
                     <input type="email" id="formEmail" name="email" placeholder="xyz@email.com">
-                </label>
-                <label>*Number:
+                </div>
+                
+                <div class="labelContainer">
+                    <label for="formPhone">*Number:
                     <input type="tel" id="formPhone" name="phoneNumber" placeholder="###-###-####" required>
-                </label>
-                <label>*Zip Code:
+                </div>
+                
+                <div class="labelContainer">
+                    <label for="formZip">*Zip Code:</label>
                     <input type="number" id="formZip" name="zipCode" pattern="(\d{5}([\-]\d{4})?)" placeholder="#####" required>
-                </label>
-                <label id="dateLabel">Date:
+                </div>
+                
+                <div class="labelContainer" id="fifthLabel">
+                    <label id="dateLabel" for="formDate">Date:</label>
                     <input type="date" name="date" id="formDate">
-                </label>
+                </div>
+                
             </div>
             </fieldset>
 
             <!--------------------------- STORM INFORMATION SECTION ----------------------------------->
             <fieldset id="stormInfo">
                 <legend><h2>Storm Information</h2></legend>
-                <label>Storm Type
+                <label class="labelContainer" for="formStormType">Storm Type
                     <input list="stormTypes" id="formStormType" name="stormType" placeholder="Storm Type">
                 </label>
                 <datalist id="stormTypes" name="stormList">
@@ -84,7 +94,7 @@
                     <option name="tornado" value="Tornado"></option>
                 </datalist>
                 <br>
-                <label>
+                <label class="labelContainer" for="formSeverity">
                     <span>Severity</span>
 
                     <input type="range" name="severity" id="formSeverity" min="1" max="10" step="1" list="ticks" 
@@ -106,7 +116,7 @@
                     <option value="10">
                 </datalist>
                 <br>
-                <label>Region
+                <label for="formStormRegion">Region
                     <select name="stormRegion" id="formStormRegion" name="stormRegion" onchange="selectResponse()">
                         <option value="" disabled selected>Select Region</option>
                         <option value="Preston">Preston</option>
@@ -120,9 +130,9 @@
                 <legend><h2>Additional Information</h2></legend>
                 <div id="radioDiv">
                     <label>User in Danger? <em>(Choose one)</em></label>
-                    <label><input type="radio" name="danger"checked>Yes</label>
-                    <label><input type="radio" name="danger">Maybe</label>
-                    <label><input type="radio" name="danger">No</label>
+                    <span class="labelSpan"><label>Yes</label><input type="radio" name="danger"checked></span>
+                    <span class="labelSpan"><label>Maybe</label><input type="radio" name="danger"></span>
+                    <span class="labelSpan"><label>No</label><input type="radio" name="danger"></span>
                 </div>
                 </label>
                 <hr>

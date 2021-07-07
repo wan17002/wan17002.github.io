@@ -87,10 +87,7 @@
     #announcementBar h2{
         position: relative;
     }
-    iframe{
-        width: 95%;
-        height: 95%;
-    }
+
 
     #gallerySection{
         grid-template-columns: 1fr 1fr;
@@ -106,4 +103,8 @@
         max-width: none;
         margin: 0px;
     }
+    .photoHR{
+        display: none;
+    }
+
 }

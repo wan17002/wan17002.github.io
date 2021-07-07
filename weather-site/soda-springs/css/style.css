@@ -131,7 +131,6 @@ main h2{
 }
 
 #summarySection{
-    border: 2px solid #FFAF54;
     padding: 5px;
 }
 #summarySection img{
@@ -140,7 +139,6 @@ main h2{
 
 #weatherSummaryDiv{
     margin: 15px;
-    border: 1px dashed #083D77;
     padding: 10px;
     background-color: white;
     text-align: center;
@@ -276,10 +274,7 @@ hr{
     margin: 0 auto;
     padding: 0px;
 }
-#weatherSummaryDiv h3{
-    font-weight: bold;
 
-}
 
 #forecastImagesDiv, #forecastImagesDiv span{
     display: none;
@@ -294,7 +289,7 @@ hr{
     text-decoration: underline;
 }
 body{
-    font-size: 5vw;
+    font-size: 3.5vw;
 }
 .ham{
     text-decoration: none;
@@ -305,6 +300,14 @@ body{
 #articleSection img:hover{
     transform:scale(1.05);
 }
-body{
-    min-width: fit-content;
+
+.card{
+    text-align: center;
+}
+#footerBar{
+    text-align: center;
+}
+
+.weatherHR{
+    display: none;
 }

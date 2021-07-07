@@ -163,6 +163,7 @@
     }
     body{
         font-size: initial;
+        min-width: initial;
     }
     #articleSection img{
         padding: 5px;

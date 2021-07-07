@@ -164,5 +164,6 @@
 
     body{
         font-size: initial;
+        min-width: initial;
     }
 }

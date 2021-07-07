@@ -305,3 +305,6 @@ body{
 #articleSection img:hover{
     transform:scale(1.05);
 }
+body{
+    min-width: fit-content;
+}

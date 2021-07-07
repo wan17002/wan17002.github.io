@@ -176,13 +176,13 @@ hr{
     grid-template-columns: 400px;
     margin: 0 auto;
     justify-content: center;
-    grid-gap: 1rem;
     
 }
 .containerDiv{
     border: 1px solid lightgray;
     padding: 5px;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .containerDiv p{
@@ -191,11 +191,15 @@ hr{
     padding-top: 0px;
 }
 #gallerySection img{
-    width: 100%;
+    max-width: 100%;
     background-color: lightgray;
-    max-width: 500px;
-    height: 100%;
+    justify-self: center;
 }
+#gallerySection div{
+    justify-self: center;
+    max-width: 100vw;
+}
+
 .loading{
     background-color: lightgray;
     position: relative;
@@ -264,4 +268,11 @@ picture{
 #articleDiv i{
     margin: 0 auto;
     text-align: center;
+}
+
+body{
+    font-size: 5vw;
+}
+body{
+    min-width: fit-content;
 }

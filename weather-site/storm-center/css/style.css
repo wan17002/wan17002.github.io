@@ -289,3 +289,12 @@ h3{
     border-bottom: 1px solid black;
     
 }
+body{
+    font-size: 5vw;
+}
+form{
+    justify-content: center;
+}
+body{
+    min-width: fit-content;
+}

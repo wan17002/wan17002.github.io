@@ -95,4 +95,14 @@
     #gallerySection{
         grid-template-columns: 1fr 1fr;
     }
+    body{
+        font-size: initial;
+    }
+    #gallerySection img{
+        width: 100%;
+    }
+    #gallerySection div{
+        max-width: none;
+        margin: 0px;
+    }
 }

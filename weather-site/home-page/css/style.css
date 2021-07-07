@@ -251,3 +251,6 @@ body{
 #articleSection{
     margin: 15px;
 }
+body{
+    min-width: fit-content;
+}

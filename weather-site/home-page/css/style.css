@@ -145,6 +145,7 @@ footer{
     width: 10em;
     width: auto;
     max-width: 100%;
+    text-align: left;
 }
 #socialMediaImages img{
     display: none;

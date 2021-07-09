@@ -1,0 +1,24 @@
+#bannerDiv{
+    width: 100%;
+    height: 550px;
+    background-image:url("../images/laie-temple_1270x800.jpg");
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position:relative;
+}
+main{
+    height: 2000px;
+}
+main h1, h2, h2 a{
+    font-family:"DM Serif Display";
+}
+main p{
+    font-family: "Open Sans", sans-serif;
+    font-size:4vw;
+}
+#templeSection{
+    padding: 25px;
+}

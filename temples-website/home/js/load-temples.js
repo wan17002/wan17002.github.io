@@ -1,6 +1,5 @@
 window.addEventListener('load', ()=> {
-    // const serverName = "http://127.0.0.1:5500/ice/temples/"
-    const requestURL = "js/temples.json"
+    const requestURL = "/temples-website/temples.json"
     fetch(requestURL)
         .then((response)=> {
             return response.json();
@@ -8,7 +7,7 @@ window.addEventListener('load', ()=> {
         .then((jsonObject)=> {
             console.log(jsonObject);
             Object.entries(jsonObject).forEach(([key, temple])=>{
-                if(temple.state == "ID"){
+                if(temple.state == "HI"){
                     buildTempleCard(temple);
                 }
             });
@@ -21,7 +20,6 @@ function buildTempleCard(temple){
     card.classList.add("temple");
     card.innerHTML = `<h2>${temple.name}</h2>
                         <img src="${temple.imageurl}" alt=${temple.name}">
-                        <p>First President: <b>${temple.presidents[0]} 1st of ${temple.presidents.length}</b></p>
-                        <p>Current President: <b>${temple.presidents[temple.presidents.length-1]}</b></p>`;
+                        `;
     document.querySelector("#temples").appendChild(card);
 }

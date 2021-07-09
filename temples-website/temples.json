@@ -1,0 +1,124 @@
+[
+    {
+        "name":"Kona Hawaii Temple",
+        "address1":"75-230 Kalani St",
+        "phone":"808-331-8504",
+        "services":{
+            "clothing-rental": "no",
+            "cafeteria":"no",
+            "patron-housing":"no",
+            "distribution-center":"no"
+        },
+        "city":"Kailua-Kona",
+        "state":"HI",
+        "zip":"96740",
+        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "covid":{
+            "phase": 3,
+            "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+            "description":"Based on First Presidency direction, this temple has resumed limited operations. At this time, all living ordinances and limited proxy ordinances are being performed. All ordinances will be performed by appointment only and proxy ordinances may be limited to members residing in this designated temple district. For these ordinances, the temple will have reduced staff and the number of guests may be limited. To schedule an appointment, please click the appointment link below. If you are unable to use the online scheduling system, please contact the temple. Temples may only have limited clothing available, so patrons are encouraged to bring their own temple clothing. Patron housing and cafeteria services may be open but with limited services. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. Please contact the temple for more information and check this page regularly for updates."
+        },
+        "temple-closures":{
+            "2021":[
+                "Tuesday, 21 September 2021 (Limited Operations)", "Saturday, 2 October 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021"
+            ],
+            "2022":[
+                "Saturday, 1 January 2022", "Monday, 3 January 2022 - Monday, 28 February 2022", "Saturday, 2 April 2022", "Saturday, 1 October 2022", "Thursday, 24 November 2022", "Saturday, 24 December 2022 - Sunday, 25 December 2022"
+            ],
+            "2023":[
+                "Sunday, 1 January 2023"
+            ]
+        }
+    },
+    
+    {
+        "name":"Laie Hawaii Temple",
+        "address1":"55-600 Naniloa Loop",
+        "phone":"808-293-2427",
+        "services":{
+            "clothing-rental": "yes",
+            "cafeteria":"no",
+            "patron-housing":"no",
+            "distribution-center":"yes"
+        },
+        "city":"Laie",
+        "state":"HI",
+        "zip":"96762",
+        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "covid":{
+            "phase": 3,
+            "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+            "description":"Based on First Presidency direction, this temple has resumed limited operations. At this time, all living ordinances and limited proxy ordinances are being performed. All ordinances will be performed by appointment only and proxy ordinances may be limited to members residing in this designated temple district. For these ordinances, the temple will have reduced staff and the number of guests may be limited. To schedule an appointment, please click the appointment link below. If you are unable to use the online scheduling system, please contact the temple. Temples may only have limited clothing available, so patrons are encouraged to bring their own temple clothing. Patron housing and cafeteria services may be open but with limited services. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. Please contact the temple for more information and check this page regularly for updates."
+        },
+        "temple-closures":{
+            "2021":[
+                "Tuesday, 21 September 2021 (Limited Operations)", "Saturday, 2 October 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021"
+            ],
+            "2022":[
+                "Saturday, 1 January 2022", "Monday, 3 January 2022 - Monday, 28 February 2022", "Saturday, 2 April 2022", "Saturday, 1 October 2022", "Thursday, 24 November 2022", "Saturday, 24 December 2022 - Sunday, 25 December 2022"
+            ],
+            "2023":[
+                "Sunday, 1 January 2023"
+            ]
+        }
+    },
+
+    {
+        "name":"San Diego California Temple",
+        "address1":"7474 Charmant Dr",
+        "phone":"858-622-0991",
+        "services":{
+            "clothing-rental": "no",
+            "cafeteria":"no",
+            "patron-housing":"no",
+            "distribution-center":"yes"
+        },
+        "city":"San Diego",
+        "state":"CA",
+        "zip":"92122",
+        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "covid":{
+            "phase": 3,
+            "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+            "description":"Based on First Presidency direction, this temple has resumed limited operations. At this time, all living ordinances and limited proxy ordinances are being performed. All ordinances will be performed by appointment only and proxy ordinances may be limited to members residing in this designated temple district. For these ordinances, the temple will have reduced staff and the number of guests may be limited. To schedule an appointment, please click the appointment link below. If you are unable to use the online scheduling system, please contact the temple. Temples may only have limited clothing available, so patrons are encouraged to bring their own temple clothing. Patron housing and cafeteria services may be open but with limited services. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. Please contact the temple for more information and check this page regularly for updates."
+        },
+        "temple-closures":{
+            "2021":[
+                "Monday, 13 September 2021 - Monday, 27 September 2021", "Saturday, 2 October 2021 - Sunday, 3 October 2021", "Wednesday, 24 November 2021 - Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021"
+            ]
+
+        }
+    },
+
+    {
+        "name":"Kona Hawaii Temple",
+        "address1":"75-230 Kalani St",
+        "phone":"808-331-8504",
+        "services":{
+            "clothing-rental": "no",
+            "cafeteria":"no",
+            "patron-housing":"no",
+            "distribution-center":"no"
+        },
+        "city":"Kailua-Kona",
+        "state":"NY",
+        "zip":"96740-1833",
+        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "covid":{
+            "phase": 3,
+            "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
+            "description":"Based on First Presidency direction, this temple has resumed limited operations. At this time, all living ordinances and limited proxy ordinances are being performed. All ordinances will be performed by appointment only and proxy ordinances may be limited to members residing in this designated temple district. For these ordinances, the temple will have reduced staff and the number of guests may be limited. To schedule an appointment, please click the appointment link below. If you are unable to use the online scheduling system, please contact the temple. Temples may only have limited clothing available, so patrons are encouraged to bring their own temple clothing. Patron housing and cafeteria services may be open but with limited services. All government guidelines will be observed, including regulations related to travel, gatherings, sanitization, and safety. Please contact the temple for more information and check this page regularly for updates."
+        },
+        "temple-closures":{
+            "2021":[
+                "Tuesday, 21 September 2021 (Limited Operations)", "Saturday, 2 October 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021"
+            ],
+            "2022":[
+                "Saturday, 1 January 2022", "Monday, 3 January 2022 - Monday, 28 February 2022", "Saturday, 2 April 2022", "Saturday, 1 October 2022", "Thursday, 24 November 2022", "Saturday, 24 December 2022 - Sunday, 25 December 2022"
+            ],
+            "2023":[
+                "Sunday, 1 January 2023"
+            ]
+        }
+    }
+]

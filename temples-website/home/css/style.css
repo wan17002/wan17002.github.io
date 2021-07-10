@@ -9,6 +9,9 @@
 
     position:relative;
 }
+section{
+    border: 1px solid #FFED66;
+}
 main{
     height: 2000px;
 }
@@ -19,6 +22,24 @@ main p{
     font-family: "Open Sans", sans-serif;
     font-size:4vw;
 }
+main h2{
+    font-size: 4.5vw;
+}
 #templeSection{
     padding: 25px;
+}
+#amenities{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px;
+    background-color:#FFFFEA;
+}
+#amenities div{
+    margin: 0 auto;
+
+}
+#amenities div img{
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 15px;
 }

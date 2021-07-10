@@ -34,6 +34,9 @@ main h2{
     padding: 25px;
     background-color:#FFFFEA;
 }
+.slideshow-container{
+    background-color: white;   
+}
 #amenities div{
     margin: 0 auto;
 

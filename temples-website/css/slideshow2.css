@@ -11,7 +11,7 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev2, .nex2 {
+.prev2, .next2 {
   cursor: pointer;
   position: absolute;
   top: 50%;

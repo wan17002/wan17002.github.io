@@ -12,9 +12,6 @@
 section{
     border: 1px solid #FFED66;
 }
-main{
-    height: 2000px;
-}
 main h1, h2, h2 a{
     font-family:"DM Serif Display";
 }
@@ -28,21 +25,53 @@ main h2{
 #templeSection{
     padding: 25px;
 }
-#amenities{
+.amenities{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     padding: 25px;
-    background-color:#FFFFEA;
+
+    vertical-align: middle;
 }
-.slideshow-container{
-    background-color: white;   
-}
-#amenities div{
+.amenities div{
     margin: 0 auto;
 
 }
-#amenities div img{
+#amenities1{
+    background-color:white;
+}
+#amenities2{
+    background-color:#FFFFEA;
+}
+.amenities div img{
     border: 1px solid black;
     box-shadow: 5px 5px 15px 5px #000000;
     padding: 15px;
+    background-color:white;
+}
+.slideshow-container, .slideshow-container2{
+    padding-top: 75px;
+}
+#registrationSection{
+    background-color:#FFFFEA;
+}
+#registrationSection h2{
+    text-align: center;
+    padding: 15px;
+}
+#registrationSection a{
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    background-color:#00CECB;
+    padding: 15px;
+    cursor:pointer;
+    border-radius:50px 50px 50px 50px;
+
+}
+#registrationSection a:hover{
+    transition-duration:.3s;
+    background-color:#FFFFEA;
+    transform:scale(1.5);
+    border: 5px dashed #00CECB;
 }

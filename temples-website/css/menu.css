@@ -27,6 +27,7 @@ nav{
     padding: 0;
     grid-template-columns: auto;
     display: grid;
+    margin:0px;
 }
 #navigation li:first-child{
     display: block;

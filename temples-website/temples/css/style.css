@@ -2,6 +2,12 @@
     border: 1px solid #D8D8D8;
     padding: 15px;
 }
+p{
+    font-family: "Open Sans",sans-serif;
+}
+h1, h2, h3, h4{
+    font-family: "DM Serif Display";
+}
 .temple h2{
     text-decoration: underline;
     border-radius: 100px;

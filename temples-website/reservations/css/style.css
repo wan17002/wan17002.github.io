@@ -7,10 +7,10 @@ h1, h2, h3, h4{
 h1{
     text-align: center;
     margin: 0 auto;
-    border-bottom: 1px solid black;
     background-color:#00CECB;
     padding: 15px;
-    border: 3px outset #FFED66;
+    border-top: 3px outset #FFED66;
+    border-bottom: 3px outset #FFED66;
 }
 section img{
     height: 150px;
@@ -19,7 +19,7 @@ main{
     background-color:#FFFFEA;
 }
 fieldset{
-    background-color:#FFFFEA;
+    background-color:rgba(255, 255, 255, 0.445);
     border:3px outset #FFED66;
     border-radius: 15px;
 }

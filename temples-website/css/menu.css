@@ -1,7 +1,13 @@
 /* Small/Phone View ***************/
 header{
     position: sticky;
-    min-width: 100%;
+    min-width: fit-content;
+}
+footer{
+    min-width: fit-content;
+}
+body{
+    min-width: fit-content;
 }
 img{
     max-width: 100%;
@@ -92,6 +98,14 @@ footer{
 }
 #navigation li p{
     transform:rotate(.25turn);
+}
+#footerBar{
+    border: none;
+    padding: 5px;
+}
+#footerBar p{
+    margin: 0px;
+    padding: 5px;
 }
 @media only screen and (min-width: 34.5em){
     nav{

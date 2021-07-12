@@ -4,10 +4,10 @@
         "address1":"75-230 Kalani St",
         "phone":"808-331-8504",
         "services":{
-            "clothing-rental": "no",
+            "clothingRental": "no",
             "cafeteria":"no",
-            "patron-housing":"no",
-            "distribution-center":"no"
+            "patronHousing":"no",
+            "distributionCenter":"no"
         },
         "city":"Kailua-Kona",
         "state":"HI",
@@ -36,15 +36,15 @@
         "address1":"55-600 Naniloa Loop",
         "phone":"808-293-2427",
         "services":{
-            "clothing-rental": "yes",
+            "clothingRental":"yes",
             "cafeteria":"no",
-            "patron-housing":"no",
-            "distribution-center":"yes"
+            "patronHousing":"no",
+            "distributionCenter":"yes"
         },
         "city":"Laie",
         "state":"HI",
         "zip":"96762",
-        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "imageurl":"https://assets.ldscdn.org/58/36/5836fd79f0f92e33bfe124e2f86ff43a382af1be/laie_hawaii_temple_lds.jpg",
         "covid":{
             "phase": 3,
             "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
@@ -68,15 +68,15 @@
         "address1":"7474 Charmant Dr",
         "phone":"858-622-0991",
         "services":{
-            "clothing-rental": "no",
+            "clothingRental": "no",
             "cafeteria":"no",
-            "patron-housing":"no",
-            "distribution-center":"yes"
+            "patronHousing":"no",
+            "distributionCenter":"yes"
         },
         "city":"San Diego",
         "state":"CA",
         "zip":"92122",
-        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "imageurl":"https://assets.ldscdn.org/4f/eb/4feb5a4e556ec9eee605991da421a198255e058a/san_diego_california_temple.jpeg",
         "covid":{
             "phase": 3,
             "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
@@ -91,19 +91,19 @@
     },
 
     {
-        "name":"Kona Hawaii Temple",
-        "address1":"75-230 Kalani St",
-        "phone":"808-331-8504",
+        "name":"Orlando Florida Temple",
+        "address1":"9000 Windy Ridge Rd",
+        "phone":"407-876-0022",
         "services":{
-            "clothing-rental": "no",
+            "clothingRental": "yes",
             "cafeteria":"no",
-            "patron-housing":"no",
-            "distribution-center":"no"
+            "patronHousing":"no",
+            "distributionCenter":"yes"
         },
-        "city":"Kailua-Kona",
-        "state":"NY",
-        "zip":"96740-1833",
-        "imageurl":"https://assets.ldscdn.org/00/5d/005d5a23ba3590a1344c3339e804f674b8e2b6a6/kona_temple_lds.jpg",
+        "city":"Windermere",
+        "state":"FL",
+        "zip":"34786",
+        "imageurl":"https://assets.ldscdn.org/60/ed/60ed4690406166989ec9b3e92afc020469f7bc06/orlando_temple_lds.jpeg",
         "covid":{
             "phase": 3,
             "title": "TEMPLE OPEN FOR ALL LIVING ORDINANCES AND LIMITED PROXY ORDINANCES",
@@ -111,13 +111,10 @@
         },
         "temple-closures":{
             "2021":[
-                "Tuesday, 21 September 2021 (Limited Operations)", "Saturday, 2 October 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021"
+                "Monday, 28 June 2021 - Monday, 12 July 2021", "Saturday, 2 October 2021 - Sunday, 3 October 2021", "Monday, 22 November 2021 - Monday, 6 December 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021 - Saturday, 1 January 2022"
             ],
             "2022":[
-                "Saturday, 1 January 2022", "Monday, 3 January 2022 - Monday, 28 February 2022", "Saturday, 2 April 2022", "Saturday, 1 October 2022", "Thursday, 24 November 2022", "Saturday, 24 December 2022 - Sunday, 25 December 2022"
-            ],
-            "2023":[
-                "Sunday, 1 January 2023"
+                "Monday, 1 August 2022 - Monday, 5 December 2022"
             ]
         }
     }

@@ -9,9 +9,11 @@
 
     position:relative;
 }
-section{
-    border: 1px solid #FFED66;
+section:nth-child(odd){
+    border-top: 2px solid #FFED66;
+    border-bottom: 2px solid #FFED66;
 }
+
 main h1, h2, h2 a{
     font-family:"DM Serif Display";
 }

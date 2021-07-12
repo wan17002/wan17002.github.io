@@ -1,0 +1,17 @@
+@media only screen and (min-width: 34.5em){
+    #templeSection{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contact{
+        text-align: center;
+    }
+    .services{
+        text-align: center;
+    }
+    .temple img{
+        max-width: 400px;
+    }
+
+}
+

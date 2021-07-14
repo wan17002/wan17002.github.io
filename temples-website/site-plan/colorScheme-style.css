@@ -1,0 +1,123 @@
+/* Small/Phone View ***************/
+body{
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+main{
+    background-color: white;
+    margin: 0;
+    padding: 1em;
+}
+h1{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFEA;
+}
+nav ul{
+    margin: 0;
+}
+#navigation{
+    /* takes bullet points off */
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+/* takes the first-child that's an li of the navigation and display block
+says "turn it on as a normal block element
+ */
+#navigation li:first-child{
+    display: block;
+}
+/* This one tells every other element in the list to turn off. 
+Don't display them*/
+#navigation li{
+    display: none;
+}
+#navigation a{
+/* this allows the whole area to be clickable */
+    display: block;
+    padding: .75rem;
+    text-align: left;
+    /*takes off the underline*/
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-family: "DM Serif Display", serif;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-family: "DM Serif Display", serif;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+h2, h3, h4{
+    font-weight: 100;
+}
+
+p, ol{
+    font-family: 'Open Sans', sans-serif;
+}
+#navigation a:hover, #navigation a.active:hover{
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+}
+
+#navigation.responsive li{
+    display:block;
+}
+@media only screen and (min-width: 34.5em){
+    nav{
+        max-width: 100%;
+    }
+    #navigation{
+        grid-template-columns:repeat(4, auto);
+    }
+    #navigation li{
+        display: block; /*change state in small view */
+    }
+    /*Hides the hamburger menu. The 3 lines at the button*/
+    #navigation li:first-child{
+        display: none;
+    }
+    #navigation a{
+        text-align: center;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 54.5em){
+    #navigation{
+        width: 800px;
+        margin: auto;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer{
+    background-color:#D8D8D8;
+    text-align: center;
+}
+footer h4{
+    margin: 0;
+}

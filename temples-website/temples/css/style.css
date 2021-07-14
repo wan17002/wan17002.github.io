@@ -11,13 +11,13 @@ h1, h2, h3, h4{
 h1{
     margin: 0 auto;
     text-align: center;
-    background-color:#00CECB;
-    border-top: 3px outset #FFED66;
-    border-bottom: 3px outset #FFED66;
+    background-color:white;
+    border-top: 10px double #00CECB;
+    border-bottom: 10px double #00CECB;
     padding: 15px;
 }
 main{
-    background-color:#FFFFEA;
+    /* background-color:#; */
 }
 .temple{
     background-color: white;
@@ -85,4 +85,10 @@ main{
     max-height: 150px;
     border-radius: 20px;
     padding: 2px;
+    padding-left: 5px;
+    text-align: left;
+}
+.services p{
+    text-align: left;
+    padding-left: 15px;
 }

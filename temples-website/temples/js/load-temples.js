@@ -67,10 +67,10 @@ function buildTempleCard(temple){
                       
                             <div class="services">
                                 <h3>Services</h3>
-                                <p><i>Clothing Rental?</i> ${clothing}</p>
-                                <p><i>Cafeteria Available?</i> ${cafeteria}</p>
-                                <p><i>Patron housing Available?</i> ${patron}</p>
-                                <p><i>Clothing Rental Available?</i> ${distribution}</p>
+                                <p>${clothing} <i>Clothing Rental?</i></p>
+                                <p>${cafeteria} <i>Cafeteria Available?</i></p>
+                                <p>${patron} <i>Patron housing Available?</i></p>
+                                <p>${distribution} <i>Clothing Rental Available?</i></p>
                             </div>
 
 

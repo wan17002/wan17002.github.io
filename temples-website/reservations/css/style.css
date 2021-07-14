@@ -7,10 +7,10 @@ h1, h2, h3, h4{
 h1{
     text-align: center;
     margin: 0 auto;
-    background-color:#00CECB;
+    background-color:white;
     padding: 15px;
-    border-top: 3px outset #FFED66;
-    border-bottom: 3px outset #FFED66;
+    border-top: 10px double #00CECB;
+    border-bottom: 10px double #00CECB;
 }
 section img{
     height: 150px;
@@ -19,8 +19,8 @@ main{
     background-color:#FFFFEA;
 }
 fieldset{
-    background-color:rgba(255, 255, 255, 0.445);
-    border:3px outset #FFED66;
+    background-color:white;
+    border:5px dashed #00CECB;
     border-radius: 15px;
 }
 form{
@@ -46,11 +46,13 @@ fieldset legend{
 .labelContainer{
     display: grid;
     grid-template-columns: 140px 1fr;
-    max-width: min-content;
 }
 .labelContainer label{
     grid-column: 1/2;
-    text-align: left;
+    text-align: right;
+    padding-right: 5px;
+    vertical-align: center;
+    margin-top: 5px;
 }
 legend{
     margin: 0 auto;
@@ -69,10 +71,11 @@ button{
     font-family: "Open Sans",sans-serif;
     border-radius: 50px;
     padding: 15px;
+    width: 20rem;
 }
 button:hover{
     background-color: #FFFFEA;
-    color: #00CECB;
+    color: black;
     transition-duration: .3s;
 }
 input, select{
@@ -85,4 +88,6 @@ textarea{
     outline: none;
     max-width: 100%;
 }
-
+.labelContainer{
+    margin: 5px;
+}

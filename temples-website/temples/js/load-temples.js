@@ -55,7 +55,13 @@ function buildTempleCard(temple){
                             <p>${temple.covid.description}</p>
                         </div>
                         <div class="templeInfo">
-
+                            <div class="services">
+                            <h3>Services</h3>
+                                <p><i>Clothing Rental?</i> ${clothing}</p>
+                                <p><i>Cafeteria Available?</i> ${cafeteria}</p>
+                                <p><i>Patron housing Available?</i> ${patron}</p>
+                                <p><i>Clothing Rental Available?</i> ${distribution}</p>
+                            </div>
                             <div class="contact">
                                 <h3>Contact Information</h3>
                                 <p>Address: <i>${temple.address1}</i></p>
@@ -64,16 +70,6 @@ function buildTempleCard(temple){
                                 <p>ZIP: <i>${temple.zip}<i></p>
                                 <p>Phone: <i>${temple.phone}</i></p>
                             </div>    
-                      
-                            <div class="services">
-                                <h3>Services</h3>
-                                <p>${clothing} <i>Clothing Rental?</i></p>
-                                <p>${cafeteria} <i>Cafeteria Available?</i></p>
-                                <p>${patron} <i>Patron housing Available?</i></p>
-                                <p>${distribution} <i>Clothing Rental Available?</i></p>
-                            </div>
-
-
                         <div>`
     document.querySelector("#templeSection").appendChild(card);
 }

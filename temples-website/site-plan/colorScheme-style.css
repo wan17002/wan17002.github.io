@@ -85,7 +85,7 @@ p, ol{
         max-width: 100%;
     }
     #navigation{
-        grid-template-columns:repeat(4, auto);
+        grid-template-columns:repeat(5, auto);
     }
     #navigation li{
         display: block; /*change state in small view */

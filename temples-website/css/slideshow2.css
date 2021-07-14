@@ -67,6 +67,7 @@ img {vertical-align: middle;}
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-top: 15px;
 }
 
 main .active2, .dot2:hover {

@@ -78,3 +78,11 @@ main h2{
     border: 5px dashed #00CECB;
 }
 
+#headerSection{
+    margin: 0 auto;
+    text-align: center;
+    background-color:white;
+    border-top: 10px double #00CECB;
+    border-bottom: 10px double #00CECB;
+    padding: 15px;
+}

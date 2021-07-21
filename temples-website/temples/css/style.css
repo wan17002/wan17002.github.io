@@ -56,7 +56,6 @@ main{
 }
 .contact{
     text-align: left;
-    border-right: 1px dashed black;
 }
 .contact p{
     font-weight: bold;
